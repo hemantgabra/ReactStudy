@@ -1,4 +1,5 @@
 import React from "react";
+
 function StudentData({ studentPropsdata}) {
   return (
     <div className="flex flex-wrap justify-center">

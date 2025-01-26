@@ -1,5 +1,5 @@
 import React from "react";
-function StudentData({ studentPropsdata }) {
+function StudentData({ studentPropsdata}) {
   return (
     <div className="flex flex-wrap justify-center">
       {studentPropsdata.map((studentData, index) => {

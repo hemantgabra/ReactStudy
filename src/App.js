@@ -3,6 +3,7 @@ import "./App.css";
 import StudentData from "./Components/StudentData";
 import EmployeData from "./Components/EmployeData";
 import Data from "./Components/Data";
+import TableData from "./Components/TableData";
 
 
 const StudentsRowData = [
@@ -530,6 +531,14 @@ function App() {
         <h1 className="text-4xl text-center mt-5 bg-blue-500 p-6 text-white">THIS IS MY INITIAL PROJECT</h1>
         <Data Paradata={JasonData} />
       </div>
+
+      <div>
+        <h1 className="text-4xl text-center mt-5 bg-blue-500 p-6 text-white">TABLE FOR DATA</h1>
+        <TableData Paradata={JasonData} />
+      </div>
+
+      
+
 
     </div>
   );

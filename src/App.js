@@ -414,8 +414,7 @@ const EmployeRowData = [
     body: "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo",
   },
 ];
-
-const JasonData = [
+const JsonData = [
 
   {
     "userId": 1,
@@ -529,12 +528,12 @@ function App() {
 
       <div>
         <h1 className="text-4xl text-center mt-5 bg-blue-500 p-6 text-white">THIS IS MY INITIAL PROJECT</h1>
-        <Data Paradata={JasonData} />
+        <Data Paradata={JsonData} />
       </div>
 
       <div>
         <h1 className="text-4xl text-center mt-5 bg-blue-500 p-6 text-white">TABLE FOR DATA</h1>
-        <TableData Paradata={JasonData} />
+        <TableData Paradata={JsonData} />
       </div>
 
       

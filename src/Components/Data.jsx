@@ -16,6 +16,11 @@ function Data({ Paradata }) {
                 );
             })}
         </div>
+
+
+
+
+
     );
 }
 

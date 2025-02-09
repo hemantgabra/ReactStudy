@@ -5,7 +5,7 @@ import StudentData from "./Components/StudentData";
 let newData = [];
 async function fetchData() {
   try {
-    let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    let response = await fetch("https://dummy-json.mock.beeceptor.com/posts");
     let json = await response.json();
     console.log("Fetched Data:", json);
     newData = json;

@@ -6,6 +6,13 @@ import "./index.css";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
+import "./css/bootstrap.min.css";
+import "./css/animate.css";
+import "./css/flex-slider.css";
+import "./css/fontawesome.css";
+import "./css/owl.css";
+import "./css/templatemo-villa-agency.css";
+
 
 <head>
 
@@ -15,27 +22,25 @@ import Contact from "./Contact";
 
 <title>Villa Agency - Real Estate HTML5 Template</title>
 
-{/* <!-- Bootstrap core CSS --> */}
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-
-{/* <!-- Additional CSS Files --> */}
-<link rel="stylesheet" href="assets/css/fontawesome.css" />
-<link rel="stylesheet" href="assets/css/templatemo-villa-agency.css" />
-<link rel="stylesheet" href="assets/css/owl.css" />
-<link rel="stylesheet" href="assets/css/animate.css" />
-<link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
+    {/* <!-- Bootstrap core CSS --> */}
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    {/* <!-- Additional CSS Files --> */}
+    {/* <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/templatemo-villa-agency.css" />
+    <link rel="stylesheet" href="./css/owl.css" />
+    <link rel="stylesheet" href="./css/animate.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> */}
 </head>
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link> |<Link to="/aboutus">About</Link> |
+      {/* <nav>
+        <Link to="/">Home</Link> |
+        <Link to="/aboutus">About</Link> |
         <Link to="/contact">Contact</Link>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<Home />} />

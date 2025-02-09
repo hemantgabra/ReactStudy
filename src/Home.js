@@ -1,21 +1,16 @@
-import "./index.js";
-
+import "./index.js"
+import "./style.css"
 function Home() {
+  const divStyle = {
+    backgroundImage: "url('./images/banner-01.jpg')",
+    // backgroundSize: "cover",
+    // backgroundPosition: "center",
+    // height: "100vh",
+  };
+
   return (
     <>
-      {/* <!-- ***** Preloader Start ***** --> */}
-      <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-          <span class="dot"></span>
-          <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      {/* <!-- ***** Preloader End ***** --> */}
-
+     
       <div class="sub-header">
         <div class="container">
           <div class="row">
@@ -44,16 +39,16 @@ function Home() {
             <div class="col-12">
               <nav class="main-nav">
                 {/* <!-- ***** Logo Start ***** --> */}
-                <a href="index.html" class="logo">
+                <a href="/" class="logo">
                   <h1>Villa</h1>
                 </a>
                 {/* <!-- ***** Logo End ***** --> */}
                 {/* <!-- ***** Menu Start ***** --> */}
                 <ul class="nav">
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="properties.html">Properties</a></li>
-                  <li><a href="property-details.html">Property Details</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="/" class="active">Home</a></li>
+                  <li><a href="/aboutus">Properties</a></li>
+                  {/* <li><a href="property-details.html">Property Details</a></li> */}
+                  <li><a href="/contact">Contact Us</a></li>
                   <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
                 </ul>
                 <a class='menu-trigger'>
@@ -69,7 +64,7 @@ function Home() {
 
       <div class="main-banner">
         <div class="owl-carousel owl-banner">
-          <div class="item item-1">
+          <div class="item item-1" style={divStyle}>
             <div class="header-text">
               <span class="category">Toronto, <em>Canada</em></span>
               <h2>Hurry!<br />Get the Best Villa for you</h2>

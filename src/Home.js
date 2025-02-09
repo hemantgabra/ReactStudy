@@ -1,5 +1,5 @@
 import "./index.js"
-import "./style.css"
+//import "./style.css"
 function Home() {
   const divStyle = {
     backgroundImage: "url('./images/banner-01.jpg')",
@@ -47,7 +47,6 @@ function Home() {
                 <ul class="nav">
                   <li><a href="/" class="active">Home</a></li>
                   <li><a href="/aboutus">Properties</a></li>
-                  {/* <li><a href="property-details.html">Property Details</a></li> */}
                   <li><a href="/contact">Contact Us</a></li>
                   <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
                 </ul>

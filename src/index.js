@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
+import Services from "./Services";
 import "./css/bootstrap.min.css";
 import "./css/animate.css";
 import "./css/flex-slider.css";
@@ -36,15 +37,17 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* <nav>
+      <nav className="shadow font-weight-bold text-lg gap-3 flex justify-content-center">
         <Link to="/">Home</Link> |
         <Link to="/aboutus">About</Link> |
         <Link to="/contact">Contact</Link>
-      </nav> */}
+        <Link to="/services">Services</Link>
+      </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Services" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

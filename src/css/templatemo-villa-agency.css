@@ -434,18 +434,18 @@ Header Style
   z-index: 999;
 }
 
-.header-area .main-nav .nav li:last-child {
+.header-area .main-nav .nav li link:last-child {
   padding-right: 0px;
 }
 
-.header-area .main-nav .nav li {
+.header-area .main-nav .nav li link {
   padding-left: 10px;
   padding-right: 10px;
   height: 100px;
   line-height: 100px;
 }
 
-.header-area .main-nav .nav li a {
+.header-area .main-nav .nav li link {
   display: block;
   padding-left: 20px;
   padding-right: 20px;
@@ -463,7 +463,7 @@ Header Style
   letter-spacing: .25px;
 }
 
-.header-area .main-nav .nav li:last-child a {
+.header-area .main-nav .nav li link:last-child  {
   background-color: #1e1e1e;
   color: #fff;
   font-size: 14px;
@@ -473,7 +473,7 @@ Header Style
   padding-left: 0px;
 }
 
-.header-area .main-nav .nav li:last-child a i {
+.header-area .main-nav .nav li link:last-child link i {
   background-color: #f35525;
   display: inline-block;
   width: 40px;
@@ -485,24 +485,24 @@ Header Style
   margin-left: -1px;
 }
 
-.header-area .main-nav .nav li:last-child:hover a {
+.header-area .main-nav .nav li:link last-child:hover link {
   background-color: #1e1e1e;
 }
 
-.header-area .main-nav .nav li:last-child:hover a i {
+.header-area .main-nav .nav li:link last-child:hover link i {
   color: #fff;
 }
 
-.header-area .main-nav .nav li:hover a {
+.header-area .main-nav .nav li:hover link {
   color: #f35525;
 }
 
-.header-area .main-nav .nav li a.active {
+.header-area .main-nav .nav li link.active {
   color: #f35525;
 }
 
 
-.background-header .main-nav .nav li a.active {
+.background-header .main-nav .nav li link.active {
   color: #f35525;
 }
 

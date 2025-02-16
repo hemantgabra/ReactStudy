@@ -14,7 +14,6 @@ import "./css/fontawesome.css";
 import "./css/owl.css";
 import "./css/templatemo-villa-agency.css";
 
-
 <head>
 
 <meta charset="utf-8" /> 

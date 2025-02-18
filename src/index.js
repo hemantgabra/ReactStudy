@@ -7,12 +7,8 @@ import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Services from "./Services";
-import "./css/bootstrap.min.css";
-import "./css/animate.css";
-import "./css/flex-slider.css";
-import "./css/fontawesome.css";
-import "./css/owl.css";
-import "./css/templatemo-villa-agency.css";
+import "./css/main.css";
+
 
 <head>
 
@@ -24,24 +20,19 @@ import "./css/templatemo-villa-agency.css";
 
     {/* <!-- Bootstrap core CSS --> */}
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    {/* <!-- Additional CSS Files --> */}
-    {/* <link rel="stylesheet" href="./css/fontawesome.css" />
-    <link rel="stylesheet" href="./css/templatemo-villa-agency.css" />
-    <link rel="stylesheet" href="./css/owl.css" />
-    <link rel="stylesheet" href="./css/animate.css" /> 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> */}
+    
 </head>
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <nav className="shadow font-weight-bold text-lg gap-3 flex justify-content-center">
+      {/* <nav className="shadow font-weight-bold text-lg gap-3 flex justify-content-center">
         <Link to="/">Home</Link> |
         <Link to="/aboutus">About</Link> |
         <Link to="/contact">Contact</Link>
         <Link to="/services">Services</Link>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -51,6 +42,5 @@ root.render(
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
-
   
 );

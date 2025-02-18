@@ -535,10 +535,6 @@ function App() {
         <h1 className="text-4xl text-center mt-5 bg-blue-500 p-6 text-white">TABLE FOR DATA</h1>
         <TableData Paradata={JsonData} />
       </div>
-
-      
-
-
     </div>
   );
 }

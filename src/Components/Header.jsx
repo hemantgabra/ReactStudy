@@ -1,64 +1,111 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link } from "react-router-dom";
+// import logo from "./images/logo.svg"
+import logo from "../images/logo.svg"
 function Header() {
   return (
     <>
+          {/* <!-- header --> */}
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <a href="index.html">
+                <img src="{logo}" alt="Logo" class="w-32" />
+            </a>
 
-      <div class="sub-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-8">
-              <ul class="info">
-                <li><i class="fa fa-envelope"></i> info@company.com</li>
-                <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
-              </ul>
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" name="search" id="search"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
+                    placeholder="search" />
+                <button
+                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Search</button>
             </div>
-            <div class="col-lg-4 col-md-4">
-              <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* <!-- ***** Header Area Start ***** --> */}
-      <header class="header-area header-sticky">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <nav class="main-nav">
-                {/* <!-- ***** Logo Start ***** --> */}
-                <a href="/" class="logo">
-                  <h1>Villa</h1>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wishlist</div>
+                    <div
+                        class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
+                        8</div>
                 </a>
-                {/* <!-- ***** Logo End ***** --> */}
-                {/* <!-- ***** Menu Start ***** --> */}
-                <ul class="nav">
-                  <React.StrictMode>
-                    <browserRouter>
-                      <li><Link to="/" class="active">Home</Link></li>
-                      <li><Link to="/aboutus">Properties</Link></li>
-                      <li><Link to="/contact">Contact Us</Link></li>
-                      <li><Link to="/services">Services</Link></li>
-                      <li><Link to="#"><i class="fa fa-calendar"></i> Schedule a visit</Link></li>
-                    </browserRouter>
-                  </React.StrictMode>
-                </ul>
-                <a class='menu-trigger'>
-                  <span>Menu</span>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <div
+                        class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
+                        2</div>
                 </a>
-                {/* <!-- ***** Menu End ***** --> */}
-              </nav>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
             </div>
-          </div>
         </div>
-      </header>
-      {/* <!-- ***** Header Area End ***** --> */}
+    </header>
+    {/* <!-- ./header --> */}
+     {/* <!-- navbar --> */}
+     <nav class="bg-gray-800">
+                <div class="container flex">
+                    <div class="px-8 py-4 bg-primary md:flex items-center cursor-pointer relative group hidden">
+                        <span class="text-white">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <span class="capitalize ml-2 text-white hidden">All Categories</span>
 
+                        {/* <!-- dropdown --> */}
+                        <div
+                            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                                <img src="assets/images/icons/sofa.svg" alt="sofa" class="w-5 h-5 object-contain"/>
+                                    <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                            </a>
+                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                                <img src="assets/images/icons/terrace.svg" alt="terrace" class="w-5 h-5 object-contain"/>
+                                    <span class="ml-6 text-gray-600 text-sm">Terarce</span>
+                            </a>
+                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                                <img src="assets/images/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain"/>
+                                    <span class="ml-6 text-gray-600 text-sm">Bed</span>
+                            </a>
+                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                                <img src="assets/images/icons/office.svg" alt="office" class="w-5 h-5 object-contain"/>
+                                    <span class="ml-6 text-gray-600 text-sm">office</span>
+                            </a>
+                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                                <img src="assets/images/icons/outdoor-cafe.svg" alt="outdoor" class="w-5 h-5 object-contain"/>
+                                    <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+                            </a>
+                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                                <img src="assets/images/icons/bed-2.svg" alt="Mattress" class="w-5 h-5 object-contain"/>
+                                    <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
+                        <div class="flex items-center space-x-6 capitalize">
+                        
+                            <Link to="/" className="text-gray-200 hover:text-white transition">Home</Link> |
+                            <Link to="/aboutus" className="text-gray-200 hover:text-white transition">About</Link> |
+                            <Link to="/contact" className="text-gray-200 hover:text-white transition">Contact</Link>
+                            <Link to="/services" className="text-gray-200 hover:text-white transition">Services</Link>
+                        
+                        
+                        </div>
+                        <a href="pages/login.html" class="text-gray-200 hover:text-white transition">Login</a>
+                    </div>
+                </div>
+            </nav>
+            {/* <!-- ./navbar --> */}
     </>
   );
 }

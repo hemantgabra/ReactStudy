@@ -1,6 +1,5 @@
 import React from "react";
 import {Link } from "react-router-dom";
-// import logo from "./images/logo.svg"
 import logo from "../images/logo.svg"
 function Header() {
   return (
@@ -9,7 +8,7 @@ function Header() {
     <header class="py-4 shadow-sm bg-white">
         <div class="container flex items-center justify-between">
             <a href="index.html">
-                <img src="{logo}" alt="Logo" class="w-32" />
+                <img src={logo} alt="Logo" class="w-32" />
             </a>
 
             <div class="w-full max-w-xl relative flex">
@@ -94,7 +93,7 @@ function Header() {
                     <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
                         <div class="flex items-center space-x-6 capitalize">
                         
-                            <Link to="/" className="text-gray-200 hover:text-white transition">Home</Link> |
+                            <Link to="/" className="text-gray-200 hover:text-white transition">Home</Link> 
                             <Link to="/aboutus" className="text-gray-200 hover:text-white transition">About</Link> |
                             <Link to="/contact" className="text-gray-200 hover:text-white transition">Contact</Link>
                             <Link to="/services" className="text-gray-200 hover:text-white transition">Services</Link>

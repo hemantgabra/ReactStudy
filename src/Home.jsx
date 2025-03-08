@@ -28,59 +28,8 @@ function Home() {
     return (
 
         <>
-            <Header></Header>
-            {/* <!-- navbar --> */}
-            <nav class="bg-gray-800">
-                <div class="container flex">
-                    <div class="px-8 py-4 bg-primary md:flex items-center cursor-pointer relative group hidden">
-                        <span class="text-white">
-                            <i class="fa-solid fa-bars"></i>
-                        </span>
-                        <span class="capitalize ml-2 text-white hidden">All Categories</span>
-
-                        {/* <!-- dropdown --> */}
-                        <div
-                            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                                <img src="assets/images/icons/sofa.svg" alt="sofa" class="w-5 h-5 object-contain"/>
-                                    <span class="ml-6 text-gray-600 text-sm">Sofa</span>
-                            </a>
-                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                                <img src="assets/images/icons/terrace.svg" alt="terrace" class="w-5 h-5 object-contain"/>
-                                    <span class="ml-6 text-gray-600 text-sm">Terarce</span>
-                            </a>
-                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                                <img src="assets/images/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain"/>
-                                    <span class="ml-6 text-gray-600 text-sm">Bed</span>
-                            </a>
-                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                                <img src="assets/images/icons/office.svg" alt="office" class="w-5 h-5 object-contain"/>
-                                    <span class="ml-6 text-gray-600 text-sm">office</span>
-                            </a>
-                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                                <img src="assets/images/icons/outdoor-cafe.svg" alt="outdoor" class="w-5 h-5 object-contain"/>
-                                    <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
-                            </a>
-                            <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                                <img src="assets/images/icons/bed-2.svg" alt="Mattress" class="w-5 h-5 object-contain"/>
-                                    <span class="ml-6 text-gray-600 text-sm">Mattress</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
-                        <div class="flex items-center space-x-6 capitalize">
-                            <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
-                            <a href="pages/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
-                            <a href="#" class="text-gray-200 hover:text-white transition">About us</a>
-                            <a href="#" class="text-gray-200 hover:text-white transition">Contact us</a>
-                        </div>
-                        <a href="pages/login.html" class="text-gray-200 hover:text-white transition">Login</a>
-                    </div>
-                </div>
-            </nav>
-            {/* <!-- ./navbar --> */}
-
+            <Header></Header>   
+           
             {/* <!-- banner --> */}
             <div class="bg-cover bg-no-repeat bg-center py-36" style={{backgroundImage: `url(${bannimg})`}}>
                 <div class="container">
@@ -102,21 +51,21 @@ function Home() {
             <div class="container py-16">
                 <div class="w-10/12 grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto justify-center">
                     <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
-                        <img src="{deliVan}" alt="Delivery" class="w-12 h-12 object-contain"/>
+                        <img src={deliVan} alt="Delivery" class="w-12 h-12 object-contain"/>
                             <div>
                                 <h4 class="font-medium capitalize text-lg">Free Shipping</h4>
                                 <p class="text-gray-500 text-sm">Order over $200</p>
                             </div>
                     </div>
                     <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
-                        <img src="{money_bck}" alt="Delivery" class="w-12 h-12 object-contain"/>
+                        <img src={money_bck} alt="Delivery" class="w-12 h-12 object-contain"/>
                             <div>
                                 <h4 class="font-medium capitalize text-lg">Money Rturns</h4>
                                 <p class="text-gray-500 text-sm">30 days money returs</p>
                             </div>
                     </div>
                     <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
-                        <img src="{service_24}" alt="Delivery" class="w-12 h-12 object-contain"/>
+                        <img src={service_24} alt="Delivery" class="w-12 h-12 object-contain"/>
                             <div>
                                 <h4 class="font-medium capitalize text-lg">24/7 Support</h4>
                                 <p class="text-gray-500 text-sm">Customer support</p>
@@ -131,35 +80,35 @@ function Home() {
                 <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">shop by category</h2>
                 <div class="grid grid-cols-3 gap-3">
                     <div class="relative rounded-sm overflow-hidden group">
-                        <img src="{category_1}" alt="category 1" class="w-full" />
+                        <img src={category_1} alt="category 1" class="w-full" />
                         <a href="#"
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Bedroom</a>
                     </div>
                     <div class="relative rounded-sm overflow-hidden group">
-                        <img src="{category_2}" alt="category 1" class="w-full" />
+                        <img src={category_2} alt="category 1" class="w-full" />
                         <a href="#"
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Mattrass</a>
                     </div>
                     <div class="relative rounded-sm overflow-hidden group">
-                        <img src="{category_3}" alt="category 1" class="w-full" />
+                        <img src={category_3} alt="category 1" class="w-full" />
                         <a href="#"
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Outdoor
                         </a>
                     </div>
 
                     <div class="relative rounded-sm overflow-hidden group">
-                        <img src="{category_4}" alt="category 1" class="w-full" />
+                        <img src={category_4} alt="category 1" class="w-full" />
                         <a href="#"
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Sofa</a>
                     </div>
                     <div class="relative rounded-sm overflow-hidden group">
-                        <img src="{category_5}" alt="category 1" class="w-full" />
+                        <img src={category_5} alt="category 1" class="w-full" />
                         <a href="#"
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Living
                             Room</a>
                     </div>
                     <div class="relative rounded-sm overflow-hidden group">
-                        <img src="{category_6}" alt="category 1" class="w-full" />
+                        <img src={category_6} alt="category 1" class="w-full" />
                         <a href="#"
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Kitchen</a>
                     </div>
@@ -173,7 +122,7 @@ function Home() {
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product1}" alt="product 1" class="w-full"/>
+                            <img src={product1} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -214,7 +163,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product2}" alt="product 1" class="w-full"/>
+                            <img src={product2} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -255,7 +204,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product3}" alt="product 1" class="w-full"/>
+                            <img src={product3} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -296,7 +245,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product4}" alt="product 1" class="w-full"/>
+                            <img src={product4} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -353,7 +302,7 @@ function Home() {
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product5}" alt="product 1" class="w-full"/>
+                            <img src={product5} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -394,7 +343,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product6}" alt="product 1" class="w-full"/>
+                            <img src={product6} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -435,7 +384,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product7}" alt="product 1" class="w-full"/>
+                            <img src={product7} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -476,7 +425,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product8}" alt="product 1" class="w-full"/>
+                            <img src={product8} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -517,7 +466,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product9}" alt="product 1" class="w-full"/>
+                            <img src={product9} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -558,7 +507,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product10}" alt="product 1" class="w-full"/>
+                            <img src={product10} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -599,7 +548,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product11}" alt="product 1" class="w-full"/>
+                            <img src={product11} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"
@@ -640,7 +589,7 @@ function Home() {
                     </div>
                     <div class="bg-white shadow rounded overflow-hidden group">
                         <div class="relative">
-                            <img src="{product12}" alt="product 1" class="w-full"/>
+                            <img src={product12} alt="product 1" class="w-full"/>
                                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                                     <a href="#"

@@ -1,0 +1,49 @@
+{
+  "allCategory": [
+    {
+      "id": 1,
+      "name": "Kilos",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Mobiles",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Fashion",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Electronics",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "Home & Furniture",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "Appliances",
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "Flight Bookings",
+      "image": ""
+    },
+    {
+      "id": 8,
+      "name": "Beauty, Toys & More",
+      "image": ""
+    },
+    {
+      "id": 9,
+      "name": "Two Wheelers",
+      "image": ""
+    }
+  ]
+}

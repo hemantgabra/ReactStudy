@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Category from "./Components/Category";
 
 function Home() {
   // const [stuData, setStuData] = useState([]);
@@ -15,7 +16,9 @@ function Home() {
 
   return (
     <div>
-      <div>Footer will come here</div>
+      <div>
+        <Category />
+      </div>
     </div>
   );
 }

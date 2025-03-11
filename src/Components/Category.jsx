@@ -3,14 +3,14 @@ import allCategoryData from "../Data/AllCategory.json";
 function Category() {
   //const [AllCategory, setAllCategory] = useState(allCategoryData);
   return (
-    <div>
-      <div className="flex">
+    <div className="w-full bg-[#f1f2f4] min-h-screen pt-4 px-20 ">
+      <div className="flex bg-white justify-evenly text-center px-40">
         {allCategoryData?.allCategory?.map((category) => (
-          <div key={category.id}>
-            <p>{category.name}</p>
+          <div className="my-5 " key={category.id}>
             <div>
               <img src={category.image} />
             </div>
+            <p className="font-semibold">{category.name}</p>
           </div>
         ))}
       </div>

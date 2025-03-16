@@ -1,0 +1,49 @@
+{
+  "allCategory": [
+    {
+      "id": 1,
+      "name": "Kilos",
+      "image": "../images/CategoryImages/Thumb/1.png"
+    },
+    {
+      "id": 2,
+      "name": "Mobiles",
+      "image": "../images/CategoryImages/Thumb/2.webp"
+    },
+    {
+      "id": 3,
+      "name": "Fashion",
+      "image": "../images/CategoryImages/Thumb/3.webp"
+    },
+    {
+      "id": 4,
+      "name": "Electronics",
+      "image": "../images/CategoryImages/Thumb/4.png"
+    },
+    {
+      "id": 5,
+      "name": "Home & Furniture",
+      "image": "../images/CategoryImages/Thumb/5.webp"
+    },
+    {
+      "id": 6,
+      "name": "Appliances",
+      "image": "../images/CategoryImages/Thumb/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Flight Bookings",
+      "image": "../images/CategoryImages/Thumb/7.png"
+    },
+    {
+      "id": 8,
+      "name": "Beauty, Toys & More",
+      "image": "../images/CategoryImages/Thumb/8.png"
+    },
+    {
+      "id": 9,
+      "name": "Two Wheelers",
+      "image": "../images/CategoryImages/Thumb/9.png"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Category from "./Components/Category";
+import Carousel from "./Components/CommonComponents/Carousel";
 
 function Home() {
   // const [stuData, setStuData] = useState([]);
@@ -18,6 +19,7 @@ function Home() {
     <div>
       <div>
         <Category />
+        <Carousel/>
       </div>
     </div>
   );

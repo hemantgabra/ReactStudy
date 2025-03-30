@@ -6,6 +6,9 @@ import allCarouselData from "./Data/AllCarousel.json";
 
 
 function Home() {
+
+  
+
   // const [stuData, setStuData] = useState([]);
   // const [loading, setLoadingState] = useState(true);
 
@@ -19,7 +22,7 @@ function Home() {
 
   return (
     <div>
-      <div>
+      <div className="">
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel}/>
       </div>

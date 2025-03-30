@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Category from "./Components/Category";
 import Carousel from "./Components/CommonComponents/Carousel";
+import allCarouselData from "./Data/AllCarousel.json";
+
 
 function Home() {
   // const [stuData, setStuData] = useState([]);
@@ -19,7 +21,7 @@ function Home() {
     <div>
       <div>
         <Category />
-        <Carousel/>
+        <Carousel carouselImg={allCarouselData.allCarousel}/>
       </div>
     </div>
   );

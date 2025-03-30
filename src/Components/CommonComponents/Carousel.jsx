@@ -2,9 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import allCarouselData from "../Data/AllCarousel.json";
 
-function Carousel() {
+function Carousel(carouselImg) {
   const settings = {
     dots: true,
     infinite: true,
@@ -15,7 +14,7 @@ function Carousel() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {allCarouselData?.AllCarousel?.map((item) => (
+        {carouselImg.map((item) => (
           <div key={item.id} className="flex justify-center">
             <img
               src={item.image}
@@ -23,6 +22,8 @@ function Carousel() {
             />
           </div>
         ))}
+        {/* <div>1</div>
+        <div>2</div> */}
       </Slider>
 
     </div>

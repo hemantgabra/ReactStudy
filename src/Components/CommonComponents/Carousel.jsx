@@ -15,7 +15,7 @@ function Carousel() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {allCarouselData?.allCarousel?.map((item) => (
+        {allCarouselData?.AllCarousel?.map((item) => (
           <div key={item.id} className="flex justify-center">
             <img
               src={item.image}

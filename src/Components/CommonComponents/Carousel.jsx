@@ -1,10 +1,10 @@
-import {React,useEffect} from "react";
+import React from "react";
+// import { React, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 function Carousel(carouselImg) {
-  const settings = {
+  const slider = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -18,9 +18,8 @@ function Carousel(carouselImg) {
   // console.log("secondata", carouselImg)
   return (
     <div className="slider-container">
-      <Slider {...settings}>
-        
-      {carouselImg.carouselImg.map((item) => (
+      <Slider {...slider}>
+        {carouselImg.carouselImg.map((item) => (
           <div key={item.id} className="flex justify-center">
             <img
               src={item.image}
@@ -28,11 +27,11 @@ function Carousel(carouselImg) {
             />
           </div>
         ))}
-        <div>1</div>
-        <div>2</div>
+        {/* <div>1</div>
+         <div>2</div> */}
       </Slider>
-
     </div>
   );
 }
+
 export default Carousel;

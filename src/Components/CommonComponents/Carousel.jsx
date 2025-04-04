@@ -10,8 +10,8 @@ function Carousel(carouselImg) {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  // useEffect(()=>{alert(JSON.stringify(carouselImg))},[]);
-
+  
+  // useEffect(()=>{(JSON.stringify(carouselImg))},[]);
   // let myImgData = JSON.stringify(carouselImg);
   // console.log("firstdata", myImgData);
   // console.log("secondata", carouselImg)

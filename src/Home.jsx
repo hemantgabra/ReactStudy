@@ -7,6 +7,9 @@ import allCategoryData from "./Data/AllCategory.json";
 import Smartphones from "./Components/CommonComponents/Smartphones";
 
 function Home() {
+
+  
+
   // const [stuData, setStuData] = useState([]);
   // const [loading, setLoadingState] = useState(true);
 

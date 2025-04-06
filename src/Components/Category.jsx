@@ -7,8 +7,8 @@ function Category() {
   const [hoveredCategory, setHoveredCategory] = useState(null);
 
   return (
-    <div className="w-full bg-[#f1f2f4] pt-4">
-      <div className="flex bg-white justify-evenly text-center px-5">
+    <div className="w-full bg-[#f1f2f4]  pt-4 px-8"> 
+      <div className="flex bg-white justify-evenly text-center px-20">
         {allCategoryData?.allCategory?.map((category) => {
           const subcategories =
             category.fashionData ||

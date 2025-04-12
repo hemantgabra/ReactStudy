@@ -3,12 +3,14 @@
     {
       "id": 1,
       "name": "Kilos",
-      "image": "../images/CategoryImages/Thumb/1.png"
+      "image": "../images/CategoryImages/Thumb/1.png",
+      "price":345
     },
     {
       "id": 2,
       "name": "Mobiles",
-      "image": "../images/CategoryImages/Thumb/2.webp"
+      "image": "../images/CategoryImages/Thumb/2.webp",
+      "price":12999
     },
     {
       "id": 3,
@@ -17,47 +19,70 @@
       "fashionData": [
         {
           "id": 1,
-          "name": "Men's Top wear"
+          "name": "Men's Top wear",
+          "image": "../images/CategoryImages/Thumb/F1.jpeg",
+          "price":299
         },
         {
           "id": 2,
-          "name": "Men's Bottom wear"
+          "name": "Men's Bottom wear",
+          "image": "../images/CategoryImages/Thumb/F2.jpeg",
+          "price":345
         },
         {
           "id": 3,
-          "name": "Women Ethnic"
+          "name": "Women Ethnic",
+          "image": "../images/CategoryImages/Thumb/F3.jpeg",
+          "price":499
         },
         {
           "id": 4,
-          "name": "Men Footwear"
+          "name": "Men Footwear",
+          "image": "../images/CategoryImages/Thumb/F4.jpeg",
+          "price":799
         },
         {
           "id": 5,
-          "name": "Women Footwear"
+          "name": "Women Footwear",
+          "image": "../images/CategoryImages/Thumb/F5.jpeg",
+          "price":1299
         },
         {
           "id": 6,
-          "name": "Watches and Accessories"
+          "name": "Watches and Accessories",
+          "image": "../images/CategoryImages/Thumb/F6.jpeg",
+          "price":499
         },
         {
           "id": 7,
-          "name": "Women Western"
+          "name": "Women Western",
+          "image": "../images/CategoryImages/Thumb/F7.jpeg",
+          "price":399
         },
         {
           "id": 8,
-          "name": "Bags, Suitcases & Luggage"
+          "name": "Bags, Suitcases & Luggage",
+          "image": "../images/CategoryImages/Thumb/F8.webp",
+
+          "price":1599
         },
         {
           "id": 9,
-          "name": "Kids"
+          "name": "Kids",
+                    "image": "../images/CategoryImages/Thumb/F9.jpeg",
+          "price":499
         },
         {
           "id": 10,
-          "name": "Essentials"
+          "name": "Essentials",
+          "image": "../images/CategoryImages/Thumb/10.jpeg",
+          "price":999
         },
         {
           "id": 11,
-          "name": "Winter"
+          "name": "Winter",
+          "image": "../images/CategoryImages/Thumb/F11.webp",
+          "price":659
         }
       ]
     },
@@ -68,35 +93,43 @@
       "electronicsData": [
         {
           "id": 1,
-          "name": "Audio"
+          "name": "Audio",
+          "price":1499
         },
         {
           "id": 2,
-          "name": "Electronis GST Store"
+          "name": "Electronis GST Store",
+          "price":2000
         },
         {
           "id": 3,
-          "name": "Cameras & Accessories"
+          "name": "Cameras & Accessories",
+          "price":2599
         },
         {
           "id": 4,
-          "name": "Computer Perpherals"
+          "name": "Computer Perpherals",
+          "price":49999
         },
         {
           "id": 5,
-          "name": "Gaming"
+          "name": "Gaming",
+          "price":5999
         },
         {
           "id": 6,
-          "name": "Health & Personal Care"
+          "name": "Health & Personal Care",
+          "price":3999
         },
         {
           "id": 7,
-          "name": "Laptop Accesories"
+          "name": "Laptop Accesories",
+          "price":6599
         },
         {
           "id": 8,
-          "name": "Laptop and Desktop"
+          "name": "Laptop and Desktop",
+          "price":59999
         },
         {
           "id": 9,
@@ -141,7 +174,7 @@
               {
                 "id":7,
                    "image":"../images/PhonesImages/7.jpeg",
-              "name":"moto g35 5Gmoto g64 5G",
+              "name":"moto g35 5G",
               "price":"From₹9,999*"
               },
               {
@@ -154,19 +187,23 @@
         },
         {
           "id": 10,
-          "name": "Powerbank"
+          "name": "Powerbank",
+          "price":499
         },
         {
           "id": 11,
-          "name": "Smart Home automation"
+          "name": "Smart Home automation",
+          "price":6549
         },
         {
           "id": 12,
-          "name": "Smart Wearables"
+          "name": "Smart Wearables",
+          "price":7899
         },
         {
           "id": 13,
-          "name": "Storage"
+          "name": "Storage",
+          "price":4599
         }
       ]
     },
@@ -177,67 +214,82 @@
       "home&furnitureData": [
         {
           "id": 1,
-          "name": "Home Furnishings"
+          "name": "Home Furnishings",
+          "price":359
         },
         {
           "id": 2,
-          "name": "Furniture"
+          "name": "Furniture",
+          "price":4999
         },
         {
           "id": 3,
-          "name": "Living Room Furniture"
+          "name": "Living Room Furniture",
+          "price":9999
         },
         {
           "id": 4,
-          "name": "Kitchen and Dining"
+          "name": "Kitchen and Dining",
+          "price":2499
         },
         {
           "id": 5,
-          "name": "Bedroom Furniture"
+          "name": "Bedroom Furniture",
+          "price":7998
         },
         {
           "id": 6,
-          "name": "Space Saving Furniture"
+          "name": "Space Saving Furniture",
+          "price":4848
         },
         {
           "id": 7,
-          "name": "Home Decore"
+          "name": "Home Decore",
+          "price":299
         },
         {
           "id": 8,
-          "name": "Tools & Utility"
+          "name": "Tools & Utility",
+          "price":199
         },
         {
           "id": 9,
-          "name": "Work Space Furniture"
+          "name": "Work Space Furniture",
+          "price":499
         },
         {
           "id": 10,
-          "name": "Kids Furniture"
+          "name": "Kids Furniture",
+          "price":399
         },
         {
           "id": 11,
-          "name": "Lightings &Electronics"
+          "name": "Lightings &Electronics",
+          "price":599
         },
         {
           "id": 12,
-          "name": "Cleaning & Bath"
+          "name": "Cleaning & Bath",
+          "price":4989
         },
         {
           "id": 13,
-          "name": "Pet & Gardening"
+          "name": "Pet & Gardening",
+          "price":699
         }
       ]
     },
     {
       "id": 6,
       "name": "Appliances",
-      "image": "../images/CategoryImages/Thumb/6.jpg"
+      "image": "../images/CategoryImages/Thumb/6.jpg",
+      "price":499
     },
     {
       "id": 7,
       "name": "Flight Bookings",
-      "image": "../images/CategoryImages/Thumb/7.png"
+      "image": "../images/CategoryImages/Thumb/7.png",
+      "price":3999
     },
     {
       "id": 8,
@@ -246,51 +298,63 @@
       "beauty&toysData": [
         {
           "id": 1,
-          "name": "Beauty & Personal Care"
+          "name": "Beauty & Personal Care",
+          "price":2598
         },
         {
           "id": 2,
-          "name": "Men's Grooming"
+          "name": "Men's Grooming",
+          "price":1999
         },
         {
           "id": 3,
-          "name": "Food & Drinks"
+          "name": "Food & Drinks",
+          "price":1299
         },
         {
           "id": 4,
-          "name": "Nutrition & Health Care"
+          "name": "Nutrition & Health Care",
+          "price":1199
         },
         {
           "id": 5,
-          "name": "Baby Care"
+          "name": "Baby Care",
+          "price":799
         },
         {
           "id": 6,
-          "name": "Toys & School Supplies"
+          "name": "Toys & School Supplies",
+          "price":499
         },
         {
           "id": 7,
-          "name": "Sports & Fitness"
+          "name": "Sports & Fitness",
+          "price":899
         },
         {
           "id": 8,
-          "name": "Books"
+          "name": "Books",
+          "price":699
         },
         {
           "id": 9,
-          "name": "Music"
+          "name": "Music",
+          "price":599
         },
         {
           "id": 10,
-          "name": "Stationary & Office Supplies"
+          "name": "Stationary & Office Supplies",
+          "price":299
         },
         {
           "id": 11,
-          "name": "Auto Accessories"
+          "name": "Auto Accessories",
+          "price":399
         },
         {
           "id": 12,
-          "name": "Safety & Hygiene Essentials"
+          "name": "Safety & Hygiene Essentials",
+          "price":499
         }
       ]
     },
@@ -301,11 +365,13 @@
       "wheelarsData": [
         {
           "id": 1,
-          "name": "Petrol Vehicles"
+          "name": "Petrol Vehicles",
+          "price":229999
         },
         {
           "id": 2,
-          "name": "Electric Vehicles"
+          "name": "Electric Vehicles",
+          "price":69999
         }
       ]
     }

@@ -13,7 +13,7 @@ function Smartphones(phonesImg) {
   };
 
   return (
-    <div className="slider-container bg-white my-10">
+    <div className=" bg-white my-10">
       <div className="text-2xl font-semibold pl-5 pt-2 pb-10">
         Best deals on Smartphones
       </div>

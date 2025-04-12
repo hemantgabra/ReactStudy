@@ -17,23 +17,33 @@
       "fashionData": [
         {
           "id": 1,
-          "name": "Men's Top wear"
+          "name": "Men's Top wear",
+          "image":"./images/topOffersImage/7.jpeg",
+          "discount":"50-80 % Off"
+          
         },
         {
           "id": 2,
-          "name": "Men's Bottom wear"
+          "name": "Men's Bottom wear",
+          "image":"./images/topOffersImage/6.jpeg",
+          "discount":"50-80 % Off"
         },
         {
           "id": 3,
-          "name": "Women Ethnic"
+          "name": "Women Ethnic",
+          "image":"./images/topOffersImage/1.jpeg",
+          "discount":"50-80 % Off"
         },
         {
           "id": 4,
           "name": "Men Footwear"
+          
         },
         {
           "id": 5,
-          "name": "Women Footwear"
+          "name": "Women Footwear",
+          "image":"./images/topOffersImage/3.jpeg",
+          "discount":"50-80 % Off"
         },
         {
           "id": 6,
@@ -41,7 +51,9 @@
         },
         {
           "id": 7,
-          "name": "Women Western"
+          "name": "Women Western",
+          "image":"./images/topOffersImage/2.jpeg",
+          "discount":"50-80 % Off"
         },
         {
           "id": 8,
@@ -100,7 +112,57 @@
         },
         {
           "id": 9,
-          "name": "MobileAccessory"
+          "name": "MobileAccessory",
+          "smartphones":[
+            {
+              "id":1,
+              "image":"../images/PhonesImages/1.jpeg",
+              "name":"Motorola G85",
+              "price":"Just₹15,999*"
+            },
+            {
+              "id":2, 
+              "image":"../images/PhonesImages/2.jpeg",
+              "name":"Vivo T3 Pro 5G",
+              "price":"From₹21,499*"
+            },
+            {
+              "id":3,
+              "image":"../images/PhonesImages/3.jpeg",
+              "name":"Moto Edge 50 Fusion",
+              "price":"From₹22,999*"
+            },
+              {
+                "id":4,
+                   "image":"../images/PhonesImages/4.webp",
+              "name":"Samsung Galaxy F16",
+              "price":"From₹11,499*"
+              },
+              {
+                "id":5,
+                   "image":"../images/PhonesImages/5.jpeg",
+              "name":"Poco X7 5G",
+              "price":"Just₹17,999*"
+              },
+              {
+                "id":6,
+              "image":"../images/PhonesImages/6.jpeg",
+              "name":"Oppo K12x 5G",
+              "price":"From₹10,999*"
+              },
+              {
+                "id":7,
+                   "image":"../images/PhonesImages/7.jpeg",
+              "name":"moto g35 5Gmoto g64 5G",
+              "price":"From₹9,999*"
+              },
+              {
+                "id":8,
+              "image":"../images/PhonesImages/8.webp",
+              "name":"moto g64 5G",
+              "price":"Just₹12,999*"
+              }
+          ]
         },
         {
           "id": 10,

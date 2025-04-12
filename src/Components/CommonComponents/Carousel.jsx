@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 function Carousel(carouselImg) {
-  const slider = {
+  const settings  = {
     dots: true,
     infinite: true,
     speed: 200,

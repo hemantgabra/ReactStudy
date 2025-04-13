@@ -27,9 +27,7 @@ function Home() {
       <div className="bg-[#f1f2f4] px-20">
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
-        <OfferPrice
-          carouselOffer={allCategoryData.allCategory[2].fashionData}
-        />
+        <OfferPrice carouselOffer={allCategoryData.allCategory} />
         <Smartphones
           phonesImg={
             allCategoryData.allCategory[3].electronicsData[8].smartphones

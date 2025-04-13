@@ -109,7 +109,11 @@
           "id": 6,
           "name": "Watches and Accessories",
           "image": "../images/CategoryImages/FashionImg/F6.jpeg",
+<<<<<<< HEAD
           "price": 499
+=======
+          "price":699
+>>>>>>> 40cc0df (fixed conflicts)
         },
         {
           "id": 7,
@@ -371,7 +375,11 @@
       "id": 7,
       "name": "Flight Bookings",
       "image": "../images/CategoryImages/Thumb/7.png",
+<<<<<<< HEAD
       "price": 3999
+=======
+      "price":3999      
+>>>>>>> 40cc0df (fixed conflicts)
     },
     {
       "id": 8,

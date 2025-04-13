@@ -35,9 +35,9 @@ function Home() {
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
         />
-        <Gridbox grid_deal={gridData.gridCategory[1].SummerData}
 
-        />
+        {/* <Gridbox grid_deal={gridData.gridCategory[0].FestiveData}/> */}
+        <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/>
 
       </div>
     </div>

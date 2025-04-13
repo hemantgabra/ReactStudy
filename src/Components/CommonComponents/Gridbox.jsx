@@ -5,6 +5,8 @@ function Festivesection(grid_deal) {
     return (
         <div className="slider-container my-10 flex flex-row">
 
+            {/* {JSON.stringify(grid_deal)} */}
+
 
             
 
@@ -18,10 +20,13 @@ function Festivesection(grid_deal) {
                 <div className="grid grid-cols-2 gap-4 p-4 bg-[white]" >
                     {
                         grid_deal.grid_deal.map((item) => (
-                            <div key={item.id} className="flex flex-col  border-2 border-gray-200 p-5 rounded-md ">
-                                <img src={item.image} className="h-[10.5rem] w-full object-cover rounded-md  transition-all duration-300  hover:scale-105" />
-                                <p className="font-semibold  mt-3">{item.title}</p>
-                                <span className="font-semibold text-[1.2rem] text-green-500">{item.deal}</span>
+                            <div key={item.id} className="flex flex-col  border-2 border-gray-200 p-5 rounded-md">
+                                <img src={item.image} alt={item.name} className="w-full h-32 object-cover mb-2" />
+                                <h3 className="text-lg font-semibold">{item.name}</h3>
+                                <p className="text-gray-500">{item.description}</p>
+                                <p className="text-blue-500 font-semibold mt-2">{item.price}</p>
+                                
+                                
                             </div>
                         ))}
                 </div>

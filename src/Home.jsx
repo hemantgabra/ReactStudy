@@ -36,7 +36,7 @@ function Home() {
           }
         />
 
-        {/* <Gridbox grid_deal={gridData.gridCategory[0].FestiveData}/> */}
+        <Gridbox grid_deal={gridData.gridCategory[0].FestiveData}/>
         <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/>
 
       </div>

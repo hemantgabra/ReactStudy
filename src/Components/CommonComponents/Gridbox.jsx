@@ -3,11 +3,13 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 function Festivesection(grid_deal) {
     return (
-        <div className="slider-container my-10">
+        <div className="slider-container my-10 flex flex-row">
 
 
+            
 
-            <div className="summer-container w-[30rem]">
+
+            <div className="summer w-[30rem]">
                 <div className="text-2xl font-semibold px-[2rem] py-[1.3rem]  bg-[white] flex items-center justify-between">
                     <p>Summer Fashion</p>
                     <FaArrowCircleRight className="text-blue-500" />
@@ -24,6 +26,8 @@ function Festivesection(grid_deal) {
                         ))}
                 </div>
             </div>
+
+
         </div>
     );
 }

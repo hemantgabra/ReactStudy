@@ -6,6 +6,9 @@ import allCarouselData from "./Data/AllCarousel.json";
 import allCategoryData from "./Data/AllCategory.json";
 import Smartphones from "./Components/CommonComponents/Smartphones";
 import OfferPrice from "./Components/CommonComponents/OfferPrice";
+import gridData from "./Data/GridCategory.json";
+import Gridbox from "./Components/CommonComponents/Gridbox";
+// import OfferPrice from "./Components/CommonComponents/OfferPrice";
 
 function Home() {
   // const [stuData, setStuData] = useState([]);
@@ -30,6 +33,10 @@ function Home() {
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
         />
+
+        <Gridbox grid_deal={gridData.gridCategory[0].FestiveData}/>
+        <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/>
+
       </div>
     </div>
   );

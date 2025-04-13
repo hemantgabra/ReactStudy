@@ -11,16 +11,32 @@ import Gridbox from "./Components/CommonComponents/Gridbox";
 // import OfferPrice from "./Components/CommonComponents/OfferPrice";
 
 function Home() {
+  const [catonedata, setCatonedata] = useState([]);
+  const [catTwodata, setCatTwodata] = useState([]);
+  const [catThreedata, setCatThreedata] = useState([]);
+
+
   // const [stuData, setStuData] = useState([]);
   // const [loading, setLoadingState] = useState(true);
 
   // useEffect(() => {
-  //   fetch("https://dummy-json.mock.beeceptor.com/posts")npm stasrt
+  //   fetch("https://dummy-json.mock.beeceptor.com/posts")
   //     .then((response) => response.json())
   //     .then((data) => setStuData(data))
   //     .catch((error) => console.error("Error:", error));
   //   setLoadingState(false);
   // }, []);
+
+
+  useEffect(() => {
+    const catOne = gridData.gridCategory[0].FestiveData;
+    const catTwo = gridData.gridCategory[1].SummerData;
+    //const catThree = allCategoryData.allCategory[0].electronicsData[0].catThree;
+    setCatonedata(catOne);
+    setCatTwodata(catTwo);
+    //setCatThreedata(catThree);
+  }
+  , []);
 
   return (
     <div>
@@ -33,9 +49,14 @@ function Home() {
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
         />
+<div className="flex">
+  
+        <Gridbox grid_deal={catonedata}/>
+        <Gridbox grid_deal={catTwodata}/>
 
-        <Gridbox grid_deal={gridData.gridCategory[0].FestiveData}/>
-        <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/>
+        {/* <Gridbox grid_deal={gridData.gridCategory}/> */}
+        {/* <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/> */}
+        </div>
 
       </div>
     </div>

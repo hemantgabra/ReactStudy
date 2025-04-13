@@ -3,12 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Smartphones(phonesImg) {
+function Smartphones({phonesImg}) {
+  console.log("sliderImg", phonesImg.length);
+ 
+ const sliderImg = phonesImg.length;
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: sliderImg,
     slidesToScroll: 7,
   };
 
@@ -18,7 +21,7 @@ function Smartphones(phonesImg) {
         Best deals on Smartphones
       </div>
       <Slider {...settings}>
-        {phonesImg.phonesImg.map((item) => (
+        {phonesImg.map((item) => (
           <div key={item.id} className="flex justify-center px-10 w-full">
             <img src={item.image} className="h-[10rem] mb-5" />
             <p className="text-sm text-center">{item.name}</p>

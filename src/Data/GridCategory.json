@@ -1,0 +1,60 @@
+{
+    "gridCategory": [
+        {
+            "id": 1,
+            "name": "Festivegrid",
+            "FestiveData": [
+                {
+                    "id": 1,
+                    "image": "/images/SquaredealImages/Festiveimg/1.webp",
+                    "title": "Casual Shirts"
+                },
+                {
+                    "id": 2,
+                    "image": "/images/SquaredealImages/Festiveimg/2.webp",
+                    "title": "Men's T-shirts"
+                },
+                {
+                    "id": 3,
+                    "image": "/images/SquaredealImages/Festiveimg/3.webp",
+                    "title": "Speakers"
+                },
+                {
+                    "id": 4,
+                    "image": "/images/SquaredealImages/Festiveimg/4.webp",
+                    "title": "Women's Gowns"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Summergrid",
+            "SummerData": [
+                {
+                    "id": 1,
+                    "image": "/images/SquaredealImages/Summerimg/1.webp",
+                    "title": "Men's Casual Shoes",
+                    "deal": "Min.70% Off"
+                },
+                {
+                    "id": 2,
+                    "image": "/images/SquaredealImages/Summerimg/2.webp",
+                    "title": "Men's Slippers",
+                    "deal": "Min.70% Off"
+                },
+                {
+                    "id": 3,
+                    "image": "/images/SquaredealImages/Summerimg/3.webp",
+                    "title": "Backpacks",
+                    "deal": "Min.70% Off"
+                },
+                {
+                    "id": 4,
+                    "image": "/images/SquaredealImages/Summerimg/4.webp",
+                    "title": "Men's Sandal & Floaters",
+                    "deal": "Min.50% Off"
+                }
+            ]
+        }
+    ]
+}

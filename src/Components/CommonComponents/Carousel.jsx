@@ -1,14 +1,18 @@
 import { React, useEffect } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-function Carousel(carouselImg) {
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+function AutoPlay(carouselImg) {
   const settings  = {
     dots: true,
     infinite: true,
-    speed: 200,
+    speed: 2000,
     slidesToShow: 1,
+    // autoplay: true,
     slidesToScroll: 1,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+    
   };
 
   // useEffect(()=>{(JSON.stringify(carouselImg))},[]);
@@ -30,4 +34,4 @@ function Carousel(carouselImg) {
   );
 }
 
-export default Carousel;
+export default AutoPlay;

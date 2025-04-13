@@ -18,7 +18,7 @@ function Category() {
 
   return (
     <div className="w-full bg-[#f1f2f4]  pt-4 ">
-      <div className="flex bg-white justify-evenly text-center px-20">
+      <div className="flex bg-white justify-evenly text-center px-[12rem]">
         {allCategoryData?.allCategory?.map((category) => {
           const subcategories =
             category.fashionData ||

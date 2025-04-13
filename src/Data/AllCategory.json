@@ -20,68 +20,68 @@
         {
           "id": 1,
           "name": "Men's Top wear",
-          "image": "../images/CategoryImages/Thumb/F1.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F1.jpeg",
           "price":299
         },
         {
           "id": 2,
           "name": "Men's Bottom wear",
-          "image": "../images/CategoryImages/Thumb/F2.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F2.jpeg",
           "price":345
         },
         {
           "id": 3,
           "name": "Women Ethnic",
-          "image": "../images/CategoryImages/Thumb/F3.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F3.jpeg",
           "price":499
         },
         {
           "id": 4,
           "name": "Men Footwear",
-          "image": "../images/CategoryImages/Thumb/F4.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F4.jpeg",
           "price":799
         },
         {
           "id": 5,
           "name": "Women Footwear",
-          "image": "../images/CategoryImages/Thumb/F5.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F5.jpeg",
           "price":1299
         },
         {
           "id": 6,
           "name": "Watches and Accessories",
-          "image": "../images/CategoryImages/Thumb/F6.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F6.jpeg",
           "price":499
         },
         {
           "id": 7,
           "name": "Women Western",
-          "image": "../images/CategoryImages/Thumb/F7.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F7.jpeg",
           "price":399
         },
         {
           "id": 8,
           "name": "Bags, Suitcases & Luggage",
-          "image": "../images/CategoryImages/Thumb/F8.webp",
+          "image": "../images/CategoryImages/FashionImg/F8.webp",
 
           "price":1599
         },
         {
           "id": 9,
           "name": "Kids",
-                    "image": "../images/CategoryImages/Thumb/F9.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F9.jpeg",
           "price":499
         },
         {
           "id": 10,
           "name": "Essentials",
-          "image": "../images/CategoryImages/Thumb/10.jpeg",
+          "image": "../images/CategoryImages/FashionImg/10.jpeg",
           "price":999
         },
         {
           "id": 11,
           "name": "Winter",
-          "image": "../images/CategoryImages/Thumb/F11.webp",
+          "image": "../images/CategoryImages/FashionImg/F11.webp",
           "price":659
         }
       ]
@@ -89,47 +89,55 @@
     {
       "id": 4,
       "name": "Electronics",
-      "image": "../images/CategoryImages/Thumb/4.png",
+      "image": "../images/CategoryImages/Thumb/2.webp",
       "electronicsData": [
         {
           "id": 1,
           "name": "Audio",
-          "price":1499
+          "price":1499,
+          "image":"../images/CategoryImages/ElectronicsImg/E1.jpeg"
         },
         {
           "id": 2,
           "name": "Electronis GST Store",
-          "price":2000
+          "price":2000,
+          "image":"../images/CategoryImages/ElectronicsImg/E2.jpeg"
         },
         {
           "id": 3,
           "name": "Cameras & Accessories",
-          "price":2599
+          "price":2599,
+          "image":"../images/CategoryImages/ElectronicsImg/E3.jpeg"
         },
         {
           "id": 4,
           "name": "Computer Perpherals",
-          "price":49999
+          "price":49999,
+          "image":"../images/CategoryImages/ElectronicsImg/E4.jpeg"
         },
         {
           "id": 5,
           "name": "Gaming",
-          "price":5999
+          "price":5999,
+          "image":"../images/CategoryImages/ElectronicsImg/E5.jpeg"
         },
         {
           "id": 6,
           "name": "Health & Personal Care",
-          "price":3999
+          "price":3999,
+          "image":"../images/CategoryImages/ElectronicsImg/E6jpeg"
         },
         {
           "id": 7,
           "name": "Laptop Accesories",
-          "price":6599
+          "price":6599,
+          "image":"../images/CategoryImages/ElectronicsImg/E7.jpeg"
         },
         {
           "id": 8,
           "name": "Laptop and Desktop",
-          "price":59999
+          "price":59999,
+          "image":"../images/CategoryImages/ElectronicsImg/E8.jpeg"
         },
         {
           "id": 9,
@@ -159,6 +167,7 @@
               "name":"Samsung Galaxy F16",
               "price":"From₹11,499*"
               },
+
               {
                 "id":5,
                    "image":"../images/PhonesImages/5.jpeg",
@@ -188,22 +197,26 @@
         {
           "id": 10,
           "name": "Powerbank",
-          "price":499
+          "price":499,
+          "image":"../images/CategoryImages/ElectronicsImg/E9.jpeg"
         },
         {
           "id": 11,
           "name": "Smart Home automation",
-          "price":6549
+          "price":6549,
+          "image":"../images/CategoryImages/ElectronicsImg/E10.jpeg"
         },
         {
           "id": 12,
           "name": "Smart Wearables",
-          "price":7899
+          "price":7899,
+          "image":"../images/CategoryImages/ElectronicsImg/E11.jpeg"
         },
         {
           "id": 13,
           "name": "Storage",
-          "price":4599
+          "price":4599,
+          "image":"../images/CategoryImages/ElectronicsImg/E12.jpeg"
         }
       ]
     },
@@ -215,67 +228,80 @@
         {
           "id": 1,
           "name": "Home Furnishings",
-          "price":359
+          "price":359,
+          "image":"../images/CategoryImages/HomeFurnImg/H1.jpeg"
         },
         {
           "id": 2,
           "name": "Furniture",
-          "price":4999
+          "price":4999,
+          "image":"../images/CategoryImages/HomeFurnImg/H2.jpeg"
         },
         {
           "id": 3,
           "name": "Living Room Furniture",
-          "price":9999
+          "price":9999,
+          "image":"../images/CategoryImages/HomeFurnImg/H3.jpeg"
         },
         {
           "id": 4,
           "name": "Kitchen and Dining",
-          "price":2499
+          "price":2499,
+          "image":"../images/CategoryImages/HomeFurnImg/H4.jpeg"
         },
         {
           "id": 5,
           "name": "Bedroom Furniture",
-          "price":7998
+          "price":7998,
+          "image":"../images/CategoryImages/HomeFurnImg/H5.jpeg"
         },
         {
           "id": 6,
           "name": "Space Saving Furniture",
-          "price":4848
+          "price":4848,
+          "image":"../images/CategoryImages/HomeFurnImg/H6.jpeg"
         },
         {
           "id": 7,
           "name": "Home Decore",
-          "price":299
+          "price":299,
+          "image":"../images/CategoryImages/HomeFurnImg/H7.jpeg"
         },
         {
           "id": 8,
           "name": "Tools & Utility",
-          "price":199
+          "price":199,
+          "image":"../images/CategoryImages/HomeFurnImg/H8.webp"
         },
         {
           "id": 9,
           "name": "Work Space Furniture",
-          "price":499
+          "price":499,
+          "image":"../images/CategoryImages/HomeFurnImg/H9.jpeg"
         },
         {
           "id": 10,
           "name": "Kids Furniture",
-          "price":399
+          "price":399,
+          "image":"../images/CategoryImages/HomeFurnImg/H10.jpeg"
         },
         {
           "id": 11,
           "name": "Lightings &Electronics",
-          "price":599
+          "price":499,
+          "image":"../images/CategoryImages/HomeFurnImg/H11.webp"
         },
         {
           "id": 12,
           "name": "Cleaning & Bath",
-          "price":4989
+          "price":498,
+          "image":"../images/CategoryImages/HomeFurnImg/H12.jpeg"
         },
         {
           "id": 13,
           "name": "Pet & Gardening",
-          "price":699
+          "price":699,
+          "image":"../images/CategoryImages/HomeFurnImg/H13.jpeg"
         }
       ]
     },
@@ -299,62 +325,74 @@
         {
           "id": 1,
           "name": "Beauty & Personal Care",
-          "price":2598
+          "price":2598,
+          "image":"../images/CategoryImages/BeautyToysImg/T1.jpeg"
         },
         {
           "id": 2,
           "name": "Men's Grooming",
-          "price":1999
+          "price":1999,
+          "image":"../images/CategoryImages/BeautyToysImg/T2.jpeg"
         },
         {
           "id": 3,
           "name": "Food & Drinks",
-          "price":1299
+          "price":1299,
+          "image":"../images/CategoryImages/BeautyToysImg/T3.webp"
         },
         {
           "id": 4,
           "name": "Nutrition & Health Care",
-          "price":1199
+          "price":1199,
+          "image":"../images/CategoryImages/BeautyToysImg/T4.jpeg"
         },
         {
           "id": 5,
           "name": "Baby Care",
-          "price":799
+          "price":799,
+          "image":"../images/CategoryImages/BeautyToysImg/T5.webp"
         },
         {
           "id": 6,
           "name": "Toys & School Supplies",
-          "price":499
+          "price":499,
+          "image":"../images/CategoryImages/BeautyToysImg/T6.jpeg"
         },
         {
           "id": 7,
           "name": "Sports & Fitness",
-          "price":899
+          "price":899,
+          "image":"../images/CategoryImages/BeautyToysImg/T7.webp"
         },
         {
           "id": 8,
           "name": "Books",
-          "price":699
+          "price":699,
+          "image":"../images/CategoryImages/BeautyToysImg/T8.webp"
         },
         {
           "id": 9,
           "name": "Music",
-          "price":599
+          "price":599,
+          "image":"../images/CategoryImages/BeautyToysImg/T9.jpeg"
         },
         {
           "id": 10,
           "name": "Stationary & Office Supplies",
-          "price":299
+          "price":299,
+          "image":"../images/CategoryImages/BeautyToysImg/T10.jpeg"
         },
         {
           "id": 11,
           "name": "Auto Accessories",
-          "price":399
+          "price":399,
+          "image":"../images/CategoryImages/BeautyToysImg/T11.webp"
         },
         {
           "id": 12,
           "name": "Safety & Hygiene Essentials",
-          "price":499
+          "price":499,
+          "image":"../images/CategoryImages/BeautyToysImg/T12.jpeg"
         }
       ]
     },
@@ -366,12 +404,14 @@
         {
           "id": 1,
           "name": "Petrol Vehicles",
-          "price":229999
+          "price":229999,
+          "image":"../images/CategoryImages/WheelersImg/W1.webp"
         },
         {
           "id": 2,
           "name": "Electric Vehicles",
-          "price":69999
+          "price":69999,
+          "image":"../images/CategoryImages/WheelersImg/W2.webp"
         }
       ]
     }

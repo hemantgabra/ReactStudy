@@ -1,325 +1,384 @@
-{
-  "allCategory": [
-    {
-      "id": 1,
-      "name": "Kilos",
-      "image": "../images/CategoryImages/Thumb/1.png"
-    },
-    {
-      "id": 2,
-      "name": "Mobiles",
-      "image": "../images/CategoryImages/Thumb/2.webp"
-    },
-    {
-      "id": 3,
-      "name": "Fashion",
-      "image": "../images/CategoryImages/Thumb/3.webp",
-      "fashionData": [
-        {
-          "id": 1,
-          "name": "Men's Top wear",
-          "image":"./images/topOffersImage/7.jpeg",
-          "discount":"50-80 % Off"
-          
-        },
-        {
-          "id": 2,
-          "name": "Men's Bottom wear",
-          "image":"./images/topOffersImage/6.jpeg",
-          "discount":"50-80 % Off"
-        },
-        {
-          "id": 3,
-          "name": "Women Ethnic",
-          "image":"./images/topOffersImage/1.jpeg",
-          "discount":"50-80 % Off"
-        },
-        {
-          "id": 4,
-          "name": "Men Footwear"
-          
-        },
-        {
-          "id": 5,
-          "name": "Women Footwear",
-          "image":"./images/topOffersImage/3.jpeg",
-          "discount":"50-80 % Off"
-        },
-        {
-          "id": 6,
-          "name": "Watches and Accessories"
-        },
-        {
-          "id": 7,
-          "name": "Women Western",
-          "image":"./images/topOffersImage/2.jpeg",
-          "discount":"50-80 % Off"
-        },
-        {
-          "id": 8,
-          "name": "Bags, Suitcases & Luggage"
-        },
-        {
-          "id": 9,
-          "name": "Kids"
-        },
-        {
-          "id": 10,
-          "name": "Essentials"
-        },
-        {
-          "id": 11,
-          "name": "Winter"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Electronics",
-      "image": "../images/CategoryImages/Thumb/4.png",
-      "electronicsData": [
-        {
-          "id": 1,
-          "name": "Audio"
-        },
-        {
-          "id": 2,
-          "name": "Electronis GST Store"
-        },
-        {
-          "id": 3,
-          "name": "Cameras & Accessories"
-        },
-        {
-          "id": 4,
-          "name": "Computer Perpherals"
-        },
-        {
-          "id": 5,
-          "name": "Gaming"
-        },
-        {
-          "id": 6,
-          "name": "Health & Personal Care"
-        },
-        {
-          "id": 7,
-          "name": "Laptop Accesories"
-        },
-        {
-          "id": 8,
-          "name": "Laptop and Desktop"
-        },
-        {
-          "id": 9,
-          "name": "MobileAccessory",
-          "smartphones":[
-            {
-              "id":1,
-              "image":"../images/PhonesImages/1.jpeg",
-              "name":"Motorola G85",
-              "price":"Just₹15,999*"
-            },
-            {
-              "id":2, 
-              "image":"../images/PhonesImages/2.jpeg",
-              "name":"Vivo T3 Pro 5G",
-              "price":"From₹21,499*"
-            },
-            {
-              "id":3,
-              "image":"../images/PhonesImages/3.jpeg",
-              "name":"Moto Edge 50 Fusion",
-              "price":"From₹22,999*"
-            },
+  {
+    "allCategory": [
+      {
+        "id": 1,
+        "name": "Kilos",
+        "image": "../images/CategoryImages/Thumb/1.png",
+        "price":345
+      },
+      {
+        "id": 2,
+        "name": "Mobiles",
+        "image": "../images/CategoryImages/Thumb/2.webp",
+        "price":12999
+      },
+      {
+        "id": 3,
+        "name": "Fashion",
+        "image": "../images/CategoryImages/Thumb/3.webp",
+        "fashionData": [
+          {
+            "id": 1,
+            "name": "Men's Top wear",
+            "image":"./images/topOffersImage/7.jpeg",
+            "discount":"50-80 % Off"
+            
+          },
+          {
+            "id": 2,
+            "name": "Men's Bottom wear",
+            "image":"./images/topOffersImage/6.jpeg",
+            "discount":"50-80 % Off"
+          },
+          {
+            "id": 3,
+            "name": "Women Ethnic",
+            "image":"./images/topOffersImage/1.jpeg",
+            "discount":"50-80 % Off"
+          },
+          {
+            "id": 4,
+            "name": "Men Footwear",
+            "image": "./images/topOffersImage/7.jpeg",
+            "discount": "40-50 % Off"
+          },
+          {
+            "id": 5,
+            "name": "Women Footwear",
+            "image":"./images/topOffersImage/3.jpeg",
+            "discount":"50-80 % Off"
+          },
+          {
+            "id": 6,
+            "name": "Watches and Accessories",
+            "image": "../images/CategoryImages/Thumb/F6.jpeg",
+            "discount":"50-60 % Off",
+            "price":499
+          },
+          {
+            "id": 7,
+            "name": "Women Western",
+            "image":"./images/topOffersImage/2.jpeg",
+            "discount":"50-80 % Off"
+          },
+          {
+            "id": 8,
+            "name": "Bags, Suitcases & Luggage",
+            "image": "../images/CategoryImages/Thumb/F8.webp",
+            "discount":"40-50 % Off",
+            "price":1599
+          },
+          {
+            "id": 9,
+            "name": "Kids",
+            "image": "../images/CategoryImages/Thumb/F9.jpeg",
+            "discount":"70-90 % Off",
+            "price":499
+          },
+          {
+            "id": 10,
+            "name": "Essentials",
+            "image": "../images/CategoryImages/Thumb/F1.jpeg",
+            "discount":"60-80 % Off",
+            "price":999
+          },
+          {
+            "id": 11,
+            "name": "Winter",
+            "image": "../images/CategoryImages/Thumb/F11.webp",
+            "discount":"70-80 % Off",
+            "price":659
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Electronics",
+        "image": "../images/CategoryImages/Thumb/4.png",
+        "electronicsData": [
+          {
+            "id": 1,
+            "name": "Audio",
+            "price":1499
+          },
+          {
+            "id": 2,
+            "name": "Electronis GST Store",
+            "price":2000
+          },
+          {
+            "id": 3,
+            "name": "Cameras & Accessories",
+            "price":2599
+          },
+          {
+            "id": 4,
+            "name": "Computer Perpherals",
+            "price":49999
+          },
+          {
+            "id": 5,
+            "name": "Gaming",
+            "price":5999
+          },
+          {
+            "id": 6,
+            "name": "Health & Personal Care",
+            "price":3999
+          },
+          {
+            "id": 7,
+            "name": "Laptop Accesories",
+            "price":6599
+          },
+          {
+            "id": 8,
+            "name": "Laptop and Desktop",
+            "price":59999
+          },
+          {
+            "id": 9,
+            "name": "MobileAccessory",
+            "smartphones":[
               {
-                "id":4,
-                   "image":"../images/PhonesImages/4.webp",
-              "name":"Samsung Galaxy F16",
-              "price":"From₹11,499*"
+                "id":1,
+                "image":"../images/PhonesImages/1.jpeg",
+                "name":"Motorola G85",
+                "price":"Just₹15,999*"
               },
               {
-                "id":5,
-                   "image":"../images/PhonesImages/5.jpeg",
-              "name":"Poco X7 5G",
-              "price":"Just₹17,999*"
+                "id":2, 
+                "image":"../images/PhonesImages/2.jpeg",
+                "name":"Vivo T3 Pro 5G",
+                "price":"From₹21,499*"
               },
               {
-                "id":6,
-              "image":"../images/PhonesImages/6.jpeg",
-              "name":"Oppo K12x 5G",
-              "price":"From₹10,999*"
+                "id":3,
+                "image":"../images/PhonesImages/3.jpeg",
+                "name":"Moto Edge 50 Fusion",
+                "price":"From₹22,999*"
               },
-              {
-                "id":7,
-                   "image":"../images/PhonesImages/7.jpeg",
-              "name":"moto g35 5Gmoto g64 5G",
-              "price":"From₹9,999*"
-              },
-              {
-                "id":8,
-              "image":"../images/PhonesImages/8.webp",
-              "name":"moto g64 5G",
-              "price":"Just₹12,999*"
-              }
-          ]
-        },
-        {
-          "id": 10,
-          "name": "Powerbank"
-        },
-        {
-          "id": 11,
-          "name": "Smart Home automation"
-        },
-        {
-          "id": 12,
-          "name": "Smart Wearables"
-        },
-        {
-          "id": 13,
-          "name": "Storage"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Home & Furniture",
-      "image": "../images/CategoryImages/Thumb/5.webp",
-      "home&furnitureData": [
-        {
-          "id": 1,
-          "name": "Home Furnishings"
-        },
-        {
-          "id": 2,
-          "name": "Furniture"
-        },
-        {
-          "id": 3,
-          "name": "Living Room Furniture"
-        },
-        {
-          "id": 4,
-          "name": "Kitchen and Dining"
-        },
-        {
-          "id": 5,
-          "name": "Bedroom Furniture"
-        },
-        {
-          "id": 6,
-          "name": "Space Saving Furniture"
-        },
-        {
-          "id": 7,
-          "name": "Home Decore"
-        },
-        {
-          "id": 8,
-          "name": "Tools & Utility"
-        },
-        {
-          "id": 9,
-          "name": "Work Space Furniture"
-        },
-        {
-          "id": 10,
-          "name": "Kids Furniture"
-        },
-        {
-          "id": 11,
-          "name": "Lightings &Electronics"
-        },
-        {
-          "id": 12,
-          "name": "Cleaning & Bath"
-        },
-        {
-          "id": 13,
-          "name": "Pet & Gardening"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Appliances",
-      "image": "../images/CategoryImages/Thumb/6.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Flight Bookings",
-      "image": "../images/CategoryImages/Thumb/7.png"
-    },
-    {
-      "id": 8,
-      "name": "Beauty, Toys & More",
-      "image": "../images/CategoryImages/Thumb/8.png",
-      "beauty&toysData": [
-        {
-          "id": 1,
-          "name": "Beauty & Personal Care"
-        },
-        {
-          "id": 2,
-          "name": "Men's Grooming"
-        },
-        {
-          "id": 3,
-          "name": "Food & Drinks"
-        },
-        {
-          "id": 4,
-          "name": "Nutrition & Health Care"
-        },
-        {
-          "id": 5,
-          "name": "Baby Care"
-        },
-        {
-          "id": 6,
-          "name": "Toys & School Supplies"
-        },
-        {
-          "id": 7,
-          "name": "Sports & Fitness"
-        },
-        {
-          "id": 8,
-          "name": "Books"
-        },
-        {
-          "id": 9,
-          "name": "Music"
-        },
-        {
-          "id": 10,
-          "name": "Stationary & Office Supplies"
-        },
-        {
-          "id": 11,
-          "name": "Auto Accessories"
-        },
-        {
-          "id": 12,
-          "name": "Safety & Hygiene Essentials"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Two Wheelers",
-      "image": "../images/CategoryImages/Thumb/9.png",
-      "wheelarsData": [
-        {
-          "id": 1,
-          "name": "Petrol Vehicles"
-        },
-        {
-          "id": 2,
-          "name": "Electric Vehicles"
-        }
-      ]
-    }
-  ]
-}
+                {
+                  "id":4,
+                    "image":"../images/PhonesImages/4.webp",
+                "name":"Samsung Galaxy F16",
+                "price":"From₹11,499*"
+                },
+                {
+                  "id":5,
+                    "image":"../images/PhonesImages/5.jpeg",
+                "name":"Poco X7 5G",
+                "price":"Just₹17,999*"
+                },
+                {
+                  "id":6,
+                "image":"../images/PhonesImages/6.jpeg",
+                "name":"Oppo K12x 5G",
+                "price":"From₹10,999*"
+                },
+                {
+                  "id":7,
+                    "image":"../images/PhonesImages/7.jpeg",
+                "name":"moto g35 5G",
+                "price":"From₹9,999*"
+                },
+                {
+                  "id":8,
+                "image":"../images/PhonesImages/8.webp",
+                "name":"moto g64 5G",
+                "price":"Just₹12,999*"
+                }
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Powerbank",
+            "price":499
+          },
+          {
+            "id": 11,
+            "name": "Smart Home automation",
+            "price":6549
+          },
+          {
+            "id": 12,
+            "name": "Smart Wearables",
+            "price":7899
+          },
+          {
+            "id": 13,
+            "name": "Storage",
+            "price":4599
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Home & Furniture",
+        "image": "../images/CategoryImages/Thumb/5.webp",
+        "home&furnitureData": [
+          {
+            "id": 1,
+            "name": "Home Furnishings",
+            "price":359
+          },
+          {
+            "id": 2,
+            "name": "Furniture",
+            "price":4999
+          },
+          {
+            "id": 3,
+            "name": "Living Room Furniture",
+            "price":9999
+          },
+          {
+            "id": 4,
+            "name": "Kitchen and Dining",
+            "price":2499
+          },
+          {
+            "id": 5,
+            "name": "Bedroom Furniture",
+            "price":7998
+          },
+          {
+            "id": 6,
+            "name": "Space Saving Furniture",
+            "price":4848
+          },
+          {
+            "id": 7,
+            "name": "Home Decore",
+            "price":299
+          },
+          {
+            "id": 8,
+            "name": "Tools & Utility",
+            "price":199
+          },
+          {
+            "id": 9,
+            "name": "Work Space Furniture",
+            "price":499
+          },
+          {
+            "id": 10,
+            "name": "Kids Furniture",
+            "price":399
+          },
+          {
+            "id": 11,
+            "name": "Lightings &Electronics",
+            "price":599
+          },
+          {
+            "id": 12,
+            "name": "Cleaning & Bath",
+            "price":4989
+          },
+          {
+            "id": 13,
+            "name": "Pet & Gardening",
+            "price":699
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Appliances",
+        "image": "../images/CategoryImages/Thumb/6.jpg",
+        "price":499
+      },
+      {
+        "id": 7,
+        "name": "Flight Bookings",
+        "image": "../images/CategoryImages/Thumb/7.png",
+        "price":3999
+      },
+      {
+        "id": 8,
+        "name": "Beauty, Toys & More",
+        "image": "../images/CategoryImages/Thumb/8.png",
+        "beauty&toysData": [
+          {
+            "id": 1,
+            "name": "Beauty & Personal Care",
+            "price":2598
+          },
+          {
+            "id": 2,
+            "name": "Men's Grooming",
+            "price":1999
+          },
+          {
+            "id": 3,
+            "name": "Food & Drinks",
+            "price":1299
+          },
+          {
+            "id": 4,
+            "name": "Nutrition & Health Care",
+            "price":1199
+          },
+          {
+            "id": 5,
+            "name": "Baby Care",
+            "price":799
+          },
+          {
+            "id": 6,
+            "name": "Toys & School Supplies",
+            "price":499
+          },
+          {
+            "id": 7,
+            "name": "Sports & Fitness",
+            "price":899
+          },
+          {
+            "id": 8,
+            "name": "Books",
+            "price":699
+          },
+          {
+            "id": 9,
+            "name": "Music",
+            "price":599
+          },
+          {
+            "id": 10,
+            "name": "Stationary & Office Supplies",
+            "price":299
+          },
+          {
+            "id": 11,
+            "name": "Auto Accessories",
+            "price":399
+          },
+          {
+            "id": 12,
+            "name": "Safety & Hygiene Essentials",
+            "price":499
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Two Wheelers",
+        "image": "../images/CategoryImages/Thumb/9.png",
+        "wheelarsData": [
+          {
+            "id": 1,
+            "name": "Petrol Vehicles",
+            "price":229999
+          },
+          {
+            "id": 2,
+            "name": "Electric Vehicles",
+            "price":69999
+          }
+        ]
+      }
+    ]
+  }

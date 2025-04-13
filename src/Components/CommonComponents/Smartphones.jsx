@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Smartphones(phonesImg,categoryImg) {
+function Smartphones(phonesImg) {
   const settings = {
     dots: true,
     infinite: true,
@@ -13,12 +13,12 @@ function Smartphones(phonesImg,categoryImg) {
   };
 
   return (
-    <div className="slider-container bg-white my-10">
+    <div className=" bg-white my-10">
       <div className="text-2xl font-semibold pl-5 pt-2 pb-10">
         Best deals on Smartphones
       </div>
       <Slider {...settings}>
-        {phonesImg.categoryImg.map((item) => (
+        {phonesImg.phonesImg.map((item) => (
           <div key={item.id} className="flex justify-center px-10 w-full">
             <img src={item.image} className="h-[10rem] mb-5" />
             <p className="text-sm text-center">{item.name}</p>

@@ -5,7 +5,8 @@ import Carousel from "./Components/CommonComponents/Carousel";
 import allCarouselData from "./Data/AllCarousel.json";
 import allCategoryData from "./Data/AllCategory.json";
 import Smartphones from "./Components/CommonComponents/Smartphones";
-import Category_slider from "./Components/CommonComponents/Category_slider"
+import Category_slider from "./Components/CommonComponents/Category_slider";
+import "./App.css";
 function Home() {
 
   // const [stuData, setStuData] = useState([]);
@@ -21,10 +22,10 @@ function Home() {
 
   return (
     <div>
-      <div className="bg-[#f1f2f4] px-5">
+      <div className="bg-[#f1f2f4] px-20">
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
-        <Category_slider categoryImg={allCategoryData.allCategory[2].fashionData}
+        <Category_slider catSlideImg={allCategoryData.allCategory[2].fashionData}
         />
         <Smartphones
           phonesImg={

@@ -3,12 +3,22 @@ import { FaChevronDown } from "react-icons/fa";
 import { useState } from "react";
 
 function Category() {
-  const categoryWithDropdown = [3, 4, 5, 8, 9];
+  const categoryWithDropdown = allCategoryData?.allCategory?.filter(
+    (category) => {
+      return (
+        category.fashionData ||
+        category.electronicsData ||
+        category["home&furnitureData"] ||
+        category["beauty&toysData"] ||
+        category.wheelarsData
+      );
+    }
+  );
   const [hoveredCategory, setHoveredCategory] = useState(null);
 
   return (
-    <div className="w-full bg-[#f1f2f4] pt-4">
-      <div className="flex bg-white justify-evenly text-center px-5">
+    <div className="w-full bg-[#f1f2f4]  pt-4 ">
+      <div className="flex bg-white justify-evenly text-center px-20">
         {allCategoryData?.allCategory?.map((category) => {
           const subcategories =
             category.fashionData ||
@@ -29,7 +39,7 @@ function Category() {
               </div>
               <p className="font-semibold flex ">
                 {category.name}
-                {categoryWithDropdown.includes(category.id) && (
+                {categoryWithDropdown.includes(category) && (
                   <FaChevronDown className="text-[0.8rem] mx-2 mt-1.5 transaction-transform hover:rotate-180 duration-300" />
                 )}
               </p>

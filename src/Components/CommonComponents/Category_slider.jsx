@@ -3,38 +3,35 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function CategoryImg({ catImg = [] }) {
-
-  const catsetting = {
-    dots: false,
-    infinite: false,
+function CategorySlide(catSlideImg) {
+  const catslide = {
+    dots: true,
+    infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToShow: 7,
+    slidesToScroll: 7,
   };
 
   return (
-    <div className="relative bg-white py-8 px-4 max-w-7xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Top Offers</h2>
-
-      <Slider  {...catsetting}>
-        {catImg.map((item) => (
-          <div key={item.id} className="flex flex-col items-center px-4">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="h-[10rem] mb-2 object-contain"
-            />
+    <div className="flex">
+    <div className=" bg-white my-10 w-full">
+      <div className="text-2xl font-semibold pl-5 pt-2 pb-10">
+        Top Offers
+      </div>  
+      <Slider {...catslide}>
+        {catSlideImg.catSlideImg.map((item) => (
+          <div key={item.id} className="flex justify-center px-6 w-full">
+            <img src={item.image} className="h-[10rem] mb-5" />
             <p className="text-sm text-center">{item.name}</p>
-            <p className="font-semibold text-center text-green-600">
-              {item.discount}
-            </p>
+            <p className="font-semibold text-center">{item.discount}</p>
           </div>
         ))}
       </Slider>
-      
+    </div>
+    {/* <div>
+        <img src="./images/topOffersImage/7.jpeg" alt="" />
+      </div> */}
     </div>
   );
 }
-
-export default CategoryImg;
+export default CategorySlide;

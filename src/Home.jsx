@@ -6,9 +6,8 @@ import allCarouselData from "./Data/AllCarousel.json";
 import allCategoryData from "./Data/AllCategory.json";
 import Smartphones from "./Components/CommonComponents/Smartphones";
 import OfferPrice from "./Components/CommonComponents/OfferPrice";
-import gridData from "./Data/GridCategory.json";
+// import gridData from "./Data/GridCategory.json";
 import Gridbox from "./Components/CommonComponents/Gridbox";
-// import OfferPrice from "./Components/CommonComponents/OfferPrice";
 
 function Home() {
   const [catonedata, setCatonedata] = useState([]);
@@ -29,14 +28,12 @@ function Home() {
 
 
   useEffect(() => {
-    const catOne = gridData.gridCategory[0].FestiveData;
-    const catTwo = gridData.gridCategory[1].SummerData;
-    //const catThree = allCategoryData.allCategory[0].electronicsData[0].catThree;
+    const catOne = allCategoryData.allCategory[2].fashionData[0].FestiveData;
+    const catTwo = allCategoryData.allCategory[2].fashionData[1].SummerData;
     setCatonedata(catOne);
     setCatTwodata(catTwo);
-    //setCatThreedata(catThree);
-  }
-  , []);
+  }, 
+  []);
 
   return (
     <div>
@@ -49,13 +46,17 @@ function Home() {
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
         />
-<div className="flex">
-  
-        <Gridbox grid_deal={catonedata}/>
-        <Gridbox grid_deal={catTwodata}/>
+        <div className="flex gap-6">
 
-        {/* <Gridbox grid_deal={gridData.gridCategory}/> */}
-        {/* <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/> */}
+          <Gridbox grid_deal={catonedata} />
+          <Gridbox grid_deal={catTwodata} />
+
+
+          {/* This is simple way for static data */}
+
+          {/* <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/> */}
+
+          {/* This is simple way for static data */}
         </div>
 
       </div>

@@ -24,6 +24,9 @@
           "price": 299,
           "FestiveData": [
             {
+              "heading": "Festive Collection"
+            },
+            {
               "id": 1,
               "image": "/images/SquaredealImages/Festiveimg/1.webp",
               "title": "Casual Shirts",
@@ -55,6 +58,9 @@
           "image": "../images/CategoryImages/FashionImg/F2.jpeg",
           "price": 345,
           "SummerData": [
+            {
+              "heading": "Summer Collection"
+            },
             {
               "id": 1,
               "image": "/images/SquaredealImages/Summerimg/1.webp",

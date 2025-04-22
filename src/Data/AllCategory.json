@@ -109,7 +109,15 @@
           "id": 6,
           "name": "Watches and Accessories",
           "image": "../images/CategoryImages/FashionImg/F6.jpeg",
+<<<<<<< HEAD
+<<<<<<< HEAD
           "price": 499
+=======
+          "price":699
+>>>>>>> 40cc0df (fixed conflicts)
+=======
+          "price":699
+>>>>>>> 40cc0df314739f9b4b3d26c6b78e3c93841f154c
         },
         {
           "id": 7,
@@ -371,7 +379,15 @@
       "id": 7,
       "name": "Flight Bookings",
       "image": "../images/CategoryImages/Thumb/7.png",
+<<<<<<< HEAD
+<<<<<<< HEAD
       "price": 3999
+=======
+      "price":3999      
+>>>>>>> 40cc0df (fixed conflicts)
+=======
+      "price":3999      
+>>>>>>> 40cc0df314739f9b4b3d26c6b78e3c93841f154c
     },
     {
       "id": 8,

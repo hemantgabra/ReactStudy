@@ -4,14 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function MoreDemanded({phonesImg}){
-  console.log("sliderImg", phonesImg.length);
+//   console.log("sliderImg", phonesImg.length);
  
- const sliderImg = phonesImg.length;
+//  const sliderImg = phonesImg.length;
   const settings = {
     dots: true,
-    infinite: true,
+
     speed: 500,
-    slidesToShow: sliderImg,
+    slidesToShow: 7,
     slidesToScroll: 7,
   };
     
@@ -79,14 +79,14 @@ function MoreDemanded({phonesImg}){
         Best deals on Smartphones
       </div>
       <Slider {...settings}>
-        {phonesImg.map((item) => (
+        {phonesImg[3].electronicsData[8].smartphones.map((item) => (
           <div key={item.id} className="flex justify-center px-10 w-full">
             <img src={item.image} className="h-[10rem] mb-5" />
             <p className="text-sm text-center">{item.name}</p>
             <p className="font-semibold text-center">{item.price}</p>
           </div>
 
-          
+            
         ))}
       </Slider>
     </div>

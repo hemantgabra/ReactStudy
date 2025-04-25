@@ -42,11 +42,11 @@ function Home() {
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
         <MoreDemanded phonesImg={allCategoryData.allCategory} />
-        <MoreDemanded
+        {/* <MoreDemanded
           phonesImg={
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
-        />
+        /> */}
         <div className="flex gap-6">
 
           <Gridbox grid_deal={catonedata} />

@@ -4,8 +4,9 @@ import Category from "./Components/Category";
 import Carousel from "./Components/CommonComponents/Carousel";
 import allCarouselData from "./Data/AllCarousel.json";
 import allCategoryData from "./Data/AllCategory.json";
-import Smartphones from "./Components/CommonComponents/Smartphones";
-import OfferPrice from "./Components/CommonComponents/OfferPrice";
+import MoreDemanded from "./Components/CommonComponents/MoreDemanded";
+// import Smartphones from "./Components/CommonComponents/Smartphones";
+// import OfferPrice from "./Components/CommonComponents/OfferPrice";
 // import gridData from "./Data/GridCategory.json";
 import Gridbox from "./Components/CommonComponents/Gridbox";
 
@@ -40,12 +41,12 @@ function Home() {
       <div className="bg-[#f1f2f4] px-20">
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
-        <OfferPrice carouselOffer={allCategoryData.allCategory} />
-        <Smartphones
+        <MoreDemanded phonesImg={allCategoryData.allCategory} />
+        {/* <MoreDemanded
           phonesImg={
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
-        />
+        /> */}
         <div className="flex gap-6">
 
           <Gridbox grid_deal={catonedata} />

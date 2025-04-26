@@ -2,20 +2,17 @@
 /node_modules
 
 # production build
-/dist
 /build
 
 # misc
 .DS_Store
-
-# environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# logs
+# log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -31,38 +28,28 @@ pnpm-debug.log*
 Thumbs.db
 Desktop.ini
 
-# test coverage
+# Optional: test coverage
 /coverage
 
-# eslint cache
+# Optional: eslint cache
 .eslintcache
 
-# parcel-bundler cache
+# Optional: parcel-bundler cache
 .cache
 
-# Storybook build
+# Optional: Storybook build
 out/
 
-# Next.js
+# Optional: next.js build output
 .next/
 
-# Vercel
+# Optional: vercel
 .vercel
 
-# Netlify
+# Optional: Netlify
 .netlify
 
-# lockfiles (keep only one depending on the package manager)
-# Remove the ones you're not using!
-# Keep only one: package-lock.json (npm) OR yarn.lock (Yarn) OR pnpm-lock.yaml (PNPM)
-# Uncomment the one you're using and comment or delete the others
-
-# For npm:
-# (DO NOT IGNORE package-lock.json if using npm)
-# package-lock.json
-
-# For Yarn:
-# yarn.lock
-
-# For PNPM:
-# pnpm-lock.yaml
+# Optional: npm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

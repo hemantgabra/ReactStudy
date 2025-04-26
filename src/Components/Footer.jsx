@@ -7,8 +7,8 @@ function Footer() {
     return <div>
 
 
-        <footer class="dark:bg-gray-800" style={{backgroundColor: '#212121'}}>
-            <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between text-white">
+        <footer className="dark:bg-gray-800" style={{backgroundColor: '#212121'}}>
+            <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between text-white">
                 <div className='text-gray-400'>
                     ABOUT
                     <ul className="mt-2 text-white" style={{fontSize:'12px'}}>
@@ -99,9 +99,9 @@ function Footer() {
                     <div>
                     ©2007-2025 Flipcart.com
                     </div>
-                    <div>
+                    {/* <div>
                         <img src="" alt="payment" />
-                    </div>
+                    </div> */}
                 </div>
         </footer>
 

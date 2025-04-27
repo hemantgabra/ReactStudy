@@ -22,6 +22,7 @@ function Contact() {
     }
 
     if (editingPostId) {
+      alert(editingPostId);
       // Update
       const res = await axios.patch(`${API_URL}/${editingPostId}`, {
         id: editingPostId,

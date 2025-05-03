@@ -59,7 +59,7 @@ function Contact() {
     setPosts(posts.filter((p) => p.id !== id));
   };
 
-  useEffect(() => {
+  useEffect(() => {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     fetchPosts();
   }, []);
 

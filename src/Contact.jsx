@@ -14,7 +14,7 @@ function Contact() {
     setPosts(res.data.slice(0, 5));
   };
 
-  
+
   const handleSubmit = async () => {
     if (!newTitle.trim()) {
       alert("Title cannot be empty!");
@@ -48,16 +48,16 @@ function Contact() {
   };
 
   
-  const handleEdit = (post) => {
-    setEditingPostId(post.id);
-    setNewTitle(post.title);
-  };
+  // const handleEdit = (post) => {
+  //   setEditingPostId(post.id);
+  //   setNewTitle(post.title);
+  // };
 
   
-  const deletePost = async (id) => {
-    await axios.delete(`${API_URL}/${id}`);
-    setPosts(posts.filter((p) => p.id !== id));
-  };
+  // const deletePost = async (id) => {
+  //   await axios.delete(`${API_URL}/${id}`);
+  //   setPosts(posts.filter((p) => p.id !== id));
+  // };
 
   useEffect(() => {
     fetchPosts();

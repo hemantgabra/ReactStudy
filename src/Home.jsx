@@ -5,6 +5,7 @@ import Carousel from "./Components/CommonComponents/Carousel";
 import allCarouselData from "./Data/AllCarousel.json";
 import allCategoryData from "./Data/AllCategory.json";
 import MoreDemanded from "./Components/CommonComponents/MoreDemanded";
+import Top_offers from "./Components/CommonComponents/Top_offers";
 // import Smartphones from "./Components/CommonComponents/Smartphones";
 // import OfferPrice from "./Components/CommonComponents/OfferPrice";
 // import gridData from "./Data/GridCategory.json";
@@ -41,6 +42,7 @@ function Home() {
       <div className="bg-[#f1f2f4] px-20">
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
+        <Top_offers topOffer={allCategoryData.allCategory[2].fashionData} />
         <MoreDemanded phonesImg={allCategoryData.allCategory} />
         {/* <MoreDemanded
           phonesImg={

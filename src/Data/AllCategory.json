@@ -13,7 +13,7 @@
       "price": 12999
     },
     {
-      "id": 3,
+      "id": 3,  
       "name": "Fashion",
       "image": "../images/CategoryImages/Thumb/3.webp",
       "fashionData": [
@@ -132,7 +132,7 @@
         {
           "id": 10,
           "name": "Essentials",
-          "image": "../images/CategoryImages/FashionImg/10.jpeg",
+          "image": "../images/CategoryImages/FashionImg/F2.jpeg",
           "price": 999
         },
         {

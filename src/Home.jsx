@@ -5,16 +5,11 @@ import Carousel from "./Components/CommonComponents/Carousel";
 import allCarouselData from "./Data/AllCarousel.json";
 import allCategoryData from "./Data/AllCategory.json";
 import Smartphones from "./Components/CommonComponents/Smartphones";
-<<<<<<< HEAD
-import Category_slider from "./Components/CommonComponents/Category_slider";
-import "./App.css";
-=======
 import OfferPrice from "./Components/CommonComponents/OfferPrice";
 import gridData from "./Data/GridCategory.json";
 import Gridbox from "./Components/CommonComponents/Gridbox";
 // import OfferPrice from "./Components/CommonComponents/OfferPrice";
 
->>>>>>> master
 function Home() {
 
   // const [stuData, setStuData] = useState([]);
@@ -33,24 +28,16 @@ function Home() {
       <div className="bg-[#f1f2f4] px-20">
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
-<<<<<<< HEAD
-        <Category_slider catSlideImg={allCategoryData.allCategory[2].fashionData}
-        />
-=======
         <OfferPrice carouselOffer={allCategoryData.allCategory} />
->>>>>>> master
         <Smartphones
           phonesImg={
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
         />
 
-<<<<<<< HEAD
-=======
         <Gridbox grid_deal={gridData.gridCategory[0].FestiveData}/>
         <Gridbox grid_deal={gridData.gridCategory[1].SummerData}/>
 
->>>>>>> master
       </div>
     </div>
   );

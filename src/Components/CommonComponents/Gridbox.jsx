@@ -6,9 +6,8 @@ import { Link} from "react-router-dom";
 function Festivesection({ grid_deal }) {
 
     const [categories, setCategories] = useState(() => []);
-    const [editingPostId, setEditingPostId] = useState(null);
-    const [newTitle, setNewTitle] = useState("");
-    const [inputValue, setInputValue] = useState("");
+    const [inputValue, setInputValue] = useState("");   
+    const [editId, setEditId] = useState(null); 
 
 
 
@@ -17,32 +16,62 @@ function Festivesection({ grid_deal }) {
     const fileRef = useRef(null);
 
 
-    const addcate = () => {
-        const name = inputRef.current.value;
-        const imageFile = fileRef.current.files[0];
+   const addcate = () => {
+    const name = inputValue;
+    const imageFile = fileRef.current.files[0];
+
+    if (name === '' || (!imageFile && editId === null)) {
+        alert("Please enter a name and select an image.");
+        return;
+    }
 
 
-        if (name === '' || !imageFile) {
-            alert("Please enter name and select img.");
-            return;
-        };
 
 
+
+
+
+
+
+    if (editId !== null) {
+        
+        const updatedCategories = categories.map(cat =>
+            cat.id === editId
+                ? {
+                    ...cat,
+                    name: name,
+                    image: imageFile ? URL.createObjectURL(imageFile) : cat.image
+                }
+                : cat
+        );
+        setCategories(updatedCategories);
+    } else {
         const newCategory = {
             id: categories.length + 1,
             name: name,
             image: URL.createObjectURL(imageFile),
-        }
-        debugger
-
+        };
         setCategories([...categories, newCategory]);
-        inputRef.current.value = "";
-        fileRef.current.value = null
-
-
-        console.log("categories", categories)
-
     }
+
+
+
+
+
+
+
+
+
+
+    
+
+    // Reset
+    setInputValue('');
+    setEditId(null);
+    inputRef.current.value = '';
+    if (fileRef.current) fileRef.current.value = null;
+};
+
 
 
     const deletePost = (id) => {
@@ -52,11 +81,14 @@ function Festivesection({ grid_deal }) {
     };
 
 
-    const editpost = (id) => {
-         if (categories.length > 0) {
-        setInputValue(categories[0].name);
+   const editpost = (id) => {
+    const existingCategory = categories.find(cat => cat.id === id);
+
+    if (existingCategory) {
+        setInputValue(existingCategory.name); 
+        setEditId(id);
     }
-    }
+};
 
 
     
@@ -88,18 +120,31 @@ function Festivesection({ grid_deal }) {
                     <div className="grid grid-cols-2 gap-4 p-4 bg-[white]" >
                         {
                         grid_deal.slice(1).map((item) => (
-                                <Link
-                                    key={item.id}
-                                    to={`/productListing/${item.id}`}
-                                    state={{ productData: item }}
-                                    className="border p-4 rounded hover:shadow-lg transition"
-                                >
+
+
+                            <Link
+                                key={item.id}
+                                to={`/productListing/${item.id}`}
+                                state={{ productData: item }}
+                                className="border p-4 rounded hover:shadow-lg transition"
+                            >
+
+
+
+
                                 <div key={item.id} className="flex flex-col  border-2 border-gray-200 p-5 rounded-md">
                                     <img src={item.image} alt={item.name} className="w-full h-32 object-cover mb-2 transition-transform duraction-300 hover:scale-105 " />
                                     <h3 className="text-lg font-semibold">{item.title}</h3>
                                     <p className="text-gray-500">{item.deal}</p>
                                 </div>
-                             </Link>
+
+
+
+                            </Link>
+
+
+
+
                             ))}
 
 
@@ -170,3 +215,4 @@ function Festivesection({ grid_deal }) {
 }
 
 export default Festivesection;
+

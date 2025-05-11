@@ -14,7 +14,7 @@ function Contact() {
     setPosts(res.data.slice(0, 5));
   };
 
-
+  
   const handleSubmit = async () => {
     if (!newTitle.trim()) {
       alert("Title cannot be empty!");
@@ -34,6 +34,7 @@ function Contact() {
       setPosts(
         posts.map((post) => (post.id === editingPostId ? res.data : post))
       );
+      
       setEditingPostId(null);
     } else {
       const res = await axios.post(API_URL, {
@@ -48,8 +49,18 @@ function Contact() {
   };
 
   
+  const handleEdit = (post) => {
+    setEditingPostId(post.id);
+    setNewTitle(post.title);
+  };
 
-  useEffect(() => {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+  
+  const deletePost = async (id) => {
+    await axios.delete(`${API_URL}/${id}`);
+    setPosts(posts.filter((p) => p.id !== id));
+  };
+
+  useEffect(() => {
     fetchPosts();
   }, []);
 
@@ -80,8 +91,8 @@ function Contact() {
       <ul className="space-y-4">
         {posts.map((post) => (
           <li
-            key={post.id}
-            className="p-4 bg-gray-100 rounded-md shadow flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+            key={post.id} 
+            className="p-4 bg-gray-100 rounded-md shadow flex flex-col sm:flex-row  sm:items-center justify-between gap-3"
           >
             <div className="flex-1">
               <strong className="text-lg text-gray-700">{post.title}</strong>

@@ -13,7 +13,7 @@
       "price": 12999
     },
     {
-      "id": 3,  
+      "id": 3,
       "name": "Fashion",
       "image": "../images/CategoryImages/Thumb/3.webp",
       "fashionData": [
@@ -30,7 +30,19 @@
               "id": 1,
               "image": "/images/SquaredealImages/Festiveimg/1.webp",
               "title": "Casual Shirts",
-              "deal": "Min.45% Off"
+              "deal": "Min.45% Off",
+              "products": [
+                {
+                  "name": "Blue Denim Shirt",
+                  "price": 999,
+                  "image": "https://dummyimage.com/150x150/cccccc/000000&text=Blue+Denim"
+                },
+                {
+                  "name": "Checked Cotton Shirt",
+                  "price": 799,
+                  "image": "https://dummyimage.com/150x150/cccccc/000000&text=Checked+Shirt"
+                }
+              ]
             },
             {
               "id": 2,
@@ -109,7 +121,7 @@
           "id": 6,
           "name": "Watches and Accessories",
           "image": "../images/CategoryImages/FashionImg/F6.jpeg",
-          "price":699
+          "price": 699
         },
         {
           "id": 7,

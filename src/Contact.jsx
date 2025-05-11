@@ -48,16 +48,6 @@ function Contact() {
   };
 
   
-  // const handleEdit = (post) => {
-  //   setEditingPostId(post.id);
-  //   setNewTitle(post.title);
-  // };
-
-  
-  // const deletePost = async (id) => {
-  //   await axios.delete(`${API_URL}/${id}`);
-  //   setPosts(posts.filter((p) => p.id !== id));
-  // };
 
   useEffect(() => {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     fetchPosts();

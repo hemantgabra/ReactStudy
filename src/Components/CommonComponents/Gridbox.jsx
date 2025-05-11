@@ -1,12 +1,14 @@
 import React, { useRef, useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { Link} from "react-router-dom";
 
 
 function Festivesection({ grid_deal }) {
 
-    const [categories, setCategories] = useState(() => grid_deal || []);
+    const [categories, setCategories] = useState(() => []);
     const [editingPostId, setEditingPostId] = useState(null);
     const [newTitle, setNewTitle] = useState("");
+    const [inputValue, setInputValue] = useState("");
 
 
 
@@ -30,20 +32,39 @@ function Festivesection({ grid_deal }) {
             id: categories.length + 1,
             name: name,
             image: URL.createObjectURL(imageFile),
-            price: Math.floor(Math.random() * 500) + 100,
         }
+        debugger
 
         setCategories([...categories, newCategory]);
         inputRef.current.value = "";
         fileRef.current.value = null
 
+
+        console.log("categories", categories)
+
     }
 
 
     const deletePost = (id) => {
+        
         const updatedCategories = categories.filter(cat => cat.id !== id);
         setCategories(updatedCategories);
     };
+
+
+    const editpost = (id) => {
+         if (categories.length > 0) {
+        setInputValue(categories[0].name);
+    }
+    }
+
+
+    
+
+
+
+
+
 
     return (
         <div>
@@ -53,9 +74,11 @@ function Festivesection({ grid_deal }) {
                     <div className="text-2xl font-semibold px-[2rem] py-[2rem]  bg-[white] flex items-center justify-between">
                         {
                             grid_deal.map((item) => (
+                                
                                 <div key={item.id} className="flex items-center gap-2">
                                     <p>{item.heading}</p>
                                 </div>
+                                   
                             ))
                         }
 
@@ -64,24 +87,30 @@ function Festivesection({ grid_deal }) {
 
                     <div className="grid grid-cols-2 gap-4 p-4 bg-[white]" >
                         {
-                            grid_deal.slice(1).map((item) => (
+                        grid_deal.slice(1).map((item) => (
+                                <Link
+                                    key={item.id}
+                                    to={`/productListing/${item.id}`}
+                                    state={{ productData: item }}
+                                    className="border p-4 rounded hover:shadow-lg transition"
+                                >
                                 <div key={item.id} className="flex flex-col  border-2 border-gray-200 p-5 rounded-md">
                                     <img src={item.image} alt={item.name} className="w-full h-32 object-cover mb-2 transition-transform duraction-300 hover:scale-105 " />
                                     <h3 className="text-lg font-semibold">{item.title}</h3>
                                     <p className="text-gray-500">{item.deal}</p>
                                 </div>
+                             </Link>
                             ))}
 
 
 
                         {categories.map((cat) => (
-                            <div key={cat.id} className="bg-white p-3 rounded shadow-md relative">
+                            <div key={cat.id} className="border border-gray-200 bg-white p-3 rounded shadow-md relative">
                                 <img
                                     src={cat.image}
                                     className="h-28 w-full object-cover rounded"
                                 />
                                 <h3 className="font-semibold mt-2">{cat.name}</h3>
-                                <p className="text-sm">Price: ₹{cat.price}</p>
                                 <button
                                     onClick={() => editpost(cat.id)}
                                     className="absolute top-2  bg-red-500 hover:bg-red-600 text-white px-2 py-1 text-xs rounded"
@@ -123,6 +152,8 @@ function Festivesection({ grid_deal }) {
                                 placeholder="Add  category"
                                 className="border rounded-md mr-1 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
                                 ref={inputRef}
+                                value={inputValue}
+                                onChange={(e) => setInputValue(e.target.value)}
                             />
                         </div>
                         <button onClick={addcate}

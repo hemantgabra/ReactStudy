@@ -1,28 +1,4 @@
-/* Hide scrollbar for all browsers */
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
-  }
-
-  
-  .slick-prev, .slick-next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    display: block;
-    /* background: red; */
-    width: 20px;
-    height: 77px !important;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-    background: #c2c0c0 !important;
+.slick-prev,.slick-next {
+    height: 40px !important;
+    background: #00000029 !important;
 }

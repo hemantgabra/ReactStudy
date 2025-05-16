@@ -37,17 +37,17 @@ function Header() {
   return (
     <Router>
       <div className="shadow-md">
-        <div className="flex justify-around items-center px-3 py-2">
+        <div className="flex justify-around items-center px-3 py-2 bg-blue-600">
           <div className="py-1">
             <img src="images/Logoimage/Logo.svg" width="200" alt="Logo" />
           </div>
 
-          <div className="border border-gray-300 flex items-center gap-3 px-4 w-[30rem] py-[0.5rem] rounded-3xl">
+          <div className="border border-gray-300 flex items-center gap-3 px-4 w-[30rem] py-[0.5rem] bg-slate-100">
             <IoSearch className="text-2xl text-gray-500" />
             <input
               type="text"
               placeholder="Search for Products, Brands and More"
-              className="w-full h-full rounded-3xl border-none outline-none text-gray-700"
+              className="w-full h-full  border-none outline-none text-gray-700"
             />
           </div>
 
@@ -55,8 +55,8 @@ function Header() {
           <div className="relative" ref={loginDropdownRef}>
             <button
               onClick={() => setIsLoginOpen(!isLoginOpen)}
-              className="text-black px-[1rem] py-[0.4rem] rounded-lg focus:outline-none 
-              flex justify-center items-center gap-[0.5rem] text-[1.1rem] font-medium hover:bg-blue-700 hover:text-white"
+              className="text-blue-600 bg-white px-[1rem] py-[0.4rem] rounded-lg focus:outline-none 
+              flex justify-center items-center gap-[0.5rem] text-[1.1rem] font-medium "
             >
               <FaRegUserCircle />
               Login
@@ -107,7 +107,7 @@ function Header() {
               </div>
             )}
           </div>
-          <nav className="flex p-3 justify-center items-center gap-10 text-[1rem] font-medium">
+          <nav className="flex p-3 justify-center items-center gap-10 text-[1rem] font-medium text-white">
             <Link
               to="/"
               className="gap-[0.5rem] flex items-center justify-center flex-row"
@@ -118,9 +118,9 @@ function Header() {
 
             <Link
               to="/aboutus"
-              className="gap-[0.5rem] flex items-center justify-center flex-row"
+              className="gap-[0.5rem] flex items-center justify-center flex-row "
             >
-              <BsShop className="text-[1.3rem] font-medium" />
+              <BsShop className="text-[1.3rem] font-medium " />
               Become a Seller
             </Link>
             {/* <Link to="/contact" className="hover:text-blue-500">Contact</Link> */}
@@ -129,8 +129,8 @@ function Header() {
           <div className="relative" ref={menuDropdownRef}>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-black px-[0.7rem] py-[0.6rem] rounded-lg focus:outline-none 
-              flex justify-center items-center gap-[0.1rem] text-[1.2rem] font-medium hover:bg-gray-300"
+              className="text-white px-[0.7rem] py-[0.6rem] rounded-lg focus:outline-none 
+              flex justify-center items-center gap-[0.1rem] text-[1.2rem] font-medium"
             >
               <CiMenuKebab />
             </button>

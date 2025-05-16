@@ -12,10 +12,6 @@ function App() {
   return (
     <div>
       <div><Header /></div>
-      
-
-      
-
       <BrowserRouter>
         
         <Routes>

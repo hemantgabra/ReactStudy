@@ -126,20 +126,12 @@ function Festivesection({ grid_deal }) {
                                 key={item.id}
                                 to={`/productListing/${item.id}`}
                                 state={{ productData: item }}
-                                className="border p-4 rounded hover:shadow-lg transition"
-                            >
-
-
-
-
+                                className="border p-4 rounded hover:shadow-lg transition">
                                 <div key={item.id} className="flex flex-col  border-2 border-gray-200 p-5 rounded-md">
                                     <img src={item.image} alt={item.name} className="w-full h-32 object-cover mb-2 transition-transform duraction-300 hover:scale-105 " />
                                     <h3 className="text-lg font-semibold">{item.title}</h3>
                                     <p className="text-gray-500">{item.deal}</p>
                                 </div>
-
-
-
                             </Link>
 
 

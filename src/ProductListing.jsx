@@ -1,4 +1,3 @@
-import { useLocation } from 'react-router-dom';
 
 const ProductListing = () => {
   const location = useLocation(); // Use location to access state

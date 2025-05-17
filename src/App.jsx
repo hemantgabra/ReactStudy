@@ -12,20 +12,23 @@ function App() {
   return (
     <div>
       <div><Header /></div>
-      
 
-      
+
+
 
       <BrowserRouter>
-        
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/productListing/:id" element={<ProductListing />} />
+  
+            <Route path="/productListing/:id" element={<ProductListing />} />
+  
+    
         </Routes>
       </BrowserRouter>
-      <div><Footer/></div>
+      <div><Footer /></div>
     </div>
   );
 }

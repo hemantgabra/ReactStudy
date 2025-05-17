@@ -7,18 +7,31 @@ const ProductListing = () => {
   console.log("Product Data:", productData); // Log to check if the data is being received
 
   return (
-    <div>
+    <div className='mt-2'>
       {productData ? (
         <>
           <h1>{productData.heading}</h1> {/* Displaying heading */}
-          <div>
-            {productData.products?.map((product, index) => (
-              <div key={index} className="product-item">
-                <img src={product.image} alt={product.name} />
-                <h2>{product.name}</h2>
-                <p>Price: ₹{product.price}</p>
-              </div>
-            ))}
+          <div className=' p-4'>
+            
+            <div className=' flex justify-between'>
+              {productData.products?.map((product, index) => (
+                <div key={index} className="product-item p-5 w-[18%]" >
+                  <img src={product.image} alt={product.name} className="w-full h-[350px] object-cover rounded-lg mb-4" />
+                  <h2 className='font-semibold text-[1.35rem]'>{product.name}</h2>
+                  <p className='font-semibold text-2xl'>Price: ₹{product.price}</p>
+                </div>
+              ))}
+            </div>
+
+             <div className=' flex justify-between mt-5'>
+              {productData.products?.map((product, index) => (
+                <div key={index} className="product-item p-5 w-[18%]" >
+                  <img src={product.image} alt={product.name} className="w-full h-[350px] object-cover rounded-lg mb-4" />
+                  <h2 className='font-semibold text-[1.35rem]'>{product.name}</h2>
+                  <p className='font-semibold text-2xl'>Price: ₹{product.price}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </>
       ) : (

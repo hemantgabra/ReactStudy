@@ -35,12 +35,27 @@
                 {
                   "name": "Blue Denim Shirt",
                   "price": 999,
-                  "image": "https://dummyimage.com/150x150/cccccc/000000&text=Blue+Denim"
+                  "image": "/images/SquaredealImages/Festiveimg/CasualShirts/1.webp"
                 },
                 {
-                  "name": "Checked Cotton Shirt",
+                  "name": "Spread Collar Shirt",
                   "price": 799,
-                  "image": "https://dummyimage.com/150x150/cccccc/000000&text=Checked+Shirt"
+                  "image": "/images/SquaredealImages/Festiveimg/CasualShirts/2.webp"
+                },
+                {
+                  "name": "Checkered Casual Shirt",
+                  "price": 850,
+                  "image": "/images/SquaredealImages/Festiveimg/CasualShirts/3.webp"
+                },
+                {
+                  "name": "Slim Collar Shirt",
+                  "price": 900,
+                  "image": "/images/SquaredealImages/Festiveimg/CasualShirts/4.webp"
+                },
+                {
+                  "name": "Mandarin Collar Shirt",
+                  "price": 899,
+                  "image": "/images/SquaredealImages/Festiveimg/CasualShirts/5.webp"
                 }
               ]
             },
@@ -48,7 +63,34 @@
               "id": 2,
               "image": "/images/SquaredealImages/Festiveimg/2.webp",
               "title": "Men's T-shirts",
-              "deal": "Min.45% Off"
+              "deal": "Min.45% Off",
+              "products": [
+                {
+                  "name": "Polo Neck T-Shirt",
+                  "price": 450,
+                  "image": "/images/SquaredealImages/Festiveimg/MensTshirt/1.webp"
+                },
+                {
+                  "name": "Polo Neck Polyester T-Shirt",
+                  "price": 400,
+                  "image": "/images/SquaredealImages/Festiveimg/MensTshirt/2.webp"
+                },
+                {
+                  "name": "Polo Neck Blend Black T-Shirt",
+                  "price": 600,
+                  "image": "/images/SquaredealImages/Festiveimg/MensTshirt/3.webp"
+                },
+                {
+                  "name": "Polo Neck Polyester T-Shirt",
+                  "price": 550,
+                  "image": "/images/SquaredealImages/Festiveimg/MensTshirt/4.webp"
+                },
+                {
+                  "name": "Striped Round Neck Polycotton T-Shirt",
+                  "price": 620,
+                  "image": "/images/SquaredealImages/Festiveimg/MensTshirt/5.webp"
+                }
+              ]
             },
             {
               "id": 3,
@@ -94,7 +136,7 @@
             {
               "id": 4,
               "image": "/images/SquaredealImages/Summerimg/4.webp",
-              "title": "Men's Sandal & Floaters",
+              "title": "Men's Sandal",
               "deal": "Min.50% Off"
             }
           ]
@@ -103,7 +145,36 @@
           "id": 3,
           "name": "Women Ethnic",
           "image": "../images/CategoryImages/FashionImg/F3.jpeg",
-          "price": 499
+          "price": 499,
+          "HomeStyle": [
+            {
+              "heading": "Make Your Home Stylish"
+            },
+            {
+              "id": 1,
+              "image": "/images/SquaredealImages/Homestyleimg/1.webp",
+              "title": "Mosquito Nets",
+              "deal": "Min.50% Off"
+            },
+            {
+              "id": 2,
+              "image": "/images/SquaredealImages/Homestyleimg/2.webp",
+              "title": "Bedsheets",
+              "deal": "Min.50% Off"
+            },
+            {
+              "id": 3,
+              "image": "/images/SquaredealImages/Homestyleimg/3.webp",
+              "title": "Shoe Rack",
+              "deal": "Min.50% Off"
+            },
+            {
+              "id": 4,
+              "image": "/images/SquaredealImages/Homestyleimg/4.webp",
+              "title": "Pillow",
+              "deal": "Min.50% Off"
+            }
+          ]
         },
         {
           "id": 4,

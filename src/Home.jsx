@@ -32,8 +32,10 @@ function Home() {
   useEffect(() => {
     const catOne = allCategoryData.allCategory[2].fashionData[0].FestiveData;
     const catTwo = allCategoryData.allCategory[2].fashionData[1].SummerData;
+    const catThree=allCategoryData.allCategory[2].fashionData[2].HomeStyle;
     setCatonedata(catOne);
     setCatTwodata(catTwo);
+    setCatThreedata(catThree);
   }, 
   []);
 
@@ -53,6 +55,7 @@ function Home() {
 
           <Gridbox grid_deal={catonedata} />
           <Gridbox grid_deal={catTwodata} />
+          <Gridbox grid_deal={catThreedata} />
 
 
           {/* This is simple way for static data */}

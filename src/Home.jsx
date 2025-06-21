@@ -18,7 +18,7 @@ function Home() {
 
 
   // const [stuData, setStuData] = useState([]);
-  // const [  , setLoadingState] = useState(true);
+  // const [loading , setLoadingState] = useState(true);
   
   // useEffect(() => {
   //   fetch("https://dummy-json.mock.beeceptor.com/posts")

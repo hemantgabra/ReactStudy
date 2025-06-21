@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
 import { FaChevronDown } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
@@ -35,7 +35,7 @@ function Header() {
   }, []);
 
   return (
-    <Router>
+  
       <div className="shadow-md">
         <div className="flex justify-around items-center px-3 py-2 bg-blue-600">
           <div className="py-1">
@@ -166,7 +166,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </Router>
+  
   );
 }
 

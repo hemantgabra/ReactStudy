@@ -8,13 +8,13 @@ function Contact() {
 
   const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
-  
+
   const fetchPosts = async () => {
     const res = await axios.get(API_URL);
     setPosts(res.data.slice(0, 5));
   };
 
-  
+
   const handleSubmit = async () => {
     if (!newTitle.trim()) {
       alert("Title cannot be empty!");
@@ -34,9 +34,12 @@ function Contact() {
       setPosts(
         posts.map((post) => (post.id === editingPostId ? res.data : post))
       );
-      
+
       setEditingPostId(null);
-    } else {
+
+    }
+
+    else {
       const res = await axios.post(API_URL, {
         title: newTitle,
         body: "This is a test body",
@@ -44,9 +47,9 @@ function Contact() {
       });
       setPosts([res.data, ...posts]);
     }
-
     setNewTitle("");
   };
+
 
   
   const handleEdit = (post) => {
@@ -54,7 +57,10 @@ function Contact() {
     setNewTitle(post.title);
   };
 
-  
+
+
+
+
   const deletePost = async (id) => {
     await axios.delete(`${API_URL}/${id}`);
     setPosts(posts.filter((p) => p.id !== id));
@@ -70,6 +76,9 @@ function Contact() {
         CRUD with Axios & Dummy API
       </h2>
 
+
+
+
       <div className="flex items-center gap-3 mb-6">
         <input
           type="text"
@@ -80,18 +89,21 @@ function Contact() {
         />
         <button
           onClick={handleSubmit}
-          className={`${
-            editingPostId ? "bg-green-500 hover:bg-green-600" : "bg-blue-500 hover:bg-blue-600"
-          } text-white px-4 py-2 rounded-md`}
+          className={`${editingPostId ? "bg-green-500 hover:bg-green-600" : "bg-blue-500 hover:bg-blue-600"
+            } text-white px-4 py-2 rounded-md`}
         >
           {editingPostId ? "Update" : "Create"}
         </button>
       </div>
 
+
+
+
+
       <ul className="space-y-4">
         {posts.map((post) => (
           <li
-            key={post.id} 
+            key={post.id}
             className="p-4 bg-gray-100 rounded-md shadow flex flex-col sm:flex-row  sm:items-center justify-between gap-3"
           >
             <div className="flex-1">

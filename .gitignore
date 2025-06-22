@@ -1,5 +1,13 @@
 # See https://git-scm.com/docs/gitignore for more about ignoring files.
 
+# Ignore all .ps files
+*.ps
+
+# Optional: Ignore PostCSS-related files or custom scripts
+postcss.config.js
+autoprefixer.ps
+
+
 # Dependency directories
 node_modules/
 .pnp/

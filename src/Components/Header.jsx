@@ -23,6 +23,7 @@ function Header() {
 
   // Question About This Const
   useEffect(() => {
+    alert('hi');
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);

@@ -23,7 +23,7 @@ function Header() {
 
   // Question About This Const
   useEffect(() => {
-    alert('hi');
+    alert('hi this is master branch');
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);

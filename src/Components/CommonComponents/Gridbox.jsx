@@ -5,9 +5,9 @@ import { Link} from "react-router-dom";
 
 function Festivesection({ grid_deal }) {
 
-    const [categories, setCategories] = useState(() => grid_deal || []);
-    const [editingPostId, setEditingPostId] = useState(null);
-    const [newTitle, setNewTitle] = useState("");
+    const [categories, setCategories] = useState(() => []);
+    const [inputValue, setInputValue] = useState("");   
+    const [editId, setEditId] = useState(null); 
 
 
 
@@ -16,35 +16,87 @@ function Festivesection({ grid_deal }) {
     const fileRef = useRef(null);
 
 
-    const addcate = () => {
-        const name = inputRef.current.value;
-        const imageFile = fileRef.current.files[0];
+   const addcate = () => {
+    const name = inputValue;
+    const imageFile = fileRef.current.files[0];
+
+    if (name === '' || (!imageFile && editId === null)) {
+        alert("Please enter a name and select an image.");
+        return;
+    }
 
 
-        if (name === '' || !imageFile) {
-            alert("Please enter name and select img.");
-            return;
-        };
 
 
+
+
+
+
+
+    if (editId !== null) {
+        
+        const updatedCategories = categories.map(cat =>
+            cat.id === editId
+                ? {
+                    ...cat,
+                    name: name,
+                    image: imageFile ? URL.createObjectURL(imageFile) : cat.image
+                }
+                : cat
+        );
+        setCategories(updatedCategories);
+    } else {
         const newCategory = {
             id: categories.length + 1,
             name: name,
             image: URL.createObjectURL(imageFile),
-            price: Math.floor(Math.random() * 500) + 100,
-        }
-
+        };
         setCategories([...categories, newCategory]);
-        inputRef.current.value = "";
-        fileRef.current.value = null
-
     }
 
 
+
+
+
+
+
+
+
+
+    
+
+    // Reset
+    setInputValue('');
+    setEditId(null);
+    inputRef.current.value = '';
+    if (fileRef.current) fileRef.current.value = null;
+};
+
+
+
     const deletePost = (id) => {
+        
         const updatedCategories = categories.filter(cat => cat.id !== id);
         setCategories(updatedCategories);
     };
+
+
+   const editpost = (id) => {
+    const existingCategory = categories.find(cat => cat.id === id);
+
+    if (existingCategory) {
+        setInputValue(existingCategory.name); 
+        setEditId(id);
+    }
+};
+
+
+    
+
+
+
+
+
 
     return (
         <div>
@@ -68,18 +120,36 @@ function Festivesection({ grid_deal }) {
                     <div className="grid grid-cols-2 gap-4 p-4 bg-[white]" >
                         {
                         grid_deal.slice(1).map((item) => (
+<<<<<<< HEAD
                                 <Link
                                     key={item.id}
                                     to={`/productListing/${item.id}`}
                                     state={{ productData: item }}
                                     className="border p-4 rounded hover:shadow-lg transition"
                                 >
+=======
+
+
+                            <Link
+                                key={item.id}
+                                to={`/productListing/${item.id}`}
+                                state={{ productData: item }}
+                                className="border p-4 rounded hover:shadow-lg transition">
+>>>>>>> 5addae6b93c3288cecace46f2382702d36d3746e
                                 <div key={item.id} className="flex flex-col  border-2 border-gray-200 p-5 rounded-md">
                                     <img src={item.image} alt={item.name} className="w-full h-32 object-cover mb-2 transition-transform duraction-300 hover:scale-105 " />
                                     <h3 className="text-lg font-semibold">{item.title}</h3>
                                     <p className="text-gray-500">{item.deal}</p>
                                 </div>
+<<<<<<< HEAD
                              </Link>
+=======
+                            </Link>
+
+
+
+
+>>>>>>> 5addae6b93c3288cecace46f2382702d36d3746e
                             ))}
 
 
@@ -91,7 +161,6 @@ function Festivesection({ grid_deal }) {
                                     className="h-28 w-full object-cover rounded"
                                 />
                                 <h3 className="font-semibold mt-2">{cat.name}</h3>
-                                <p className="text-sm">Price: ₹{cat.price}</p>
                                 <button
                                     onClick={() => editpost(cat.id)}
                                     className="absolute top-2  bg-red-500 hover:bg-red-600 text-white px-2 py-1 text-xs rounded"
@@ -133,6 +202,8 @@ function Festivesection({ grid_deal }) {
                                 placeholder="Add  category"
                                 className="border rounded-md mr-1 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
                                 ref={inputRef}
+                                value={inputValue}
+                                onChange={(e) => setInputValue(e.target.value)}
                             />
                         </div>
                         <button onClick={addcate}
@@ -149,3 +220,4 @@ function Festivesection({ grid_deal }) {
 }
 
 export default Festivesection;
+

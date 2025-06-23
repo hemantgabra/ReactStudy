@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {Link} from "react-router-dom";
+
 
 function MoreDemanded({phonesImg}){
 //   console.log("sliderImg", phonesImg.length);
@@ -9,7 +11,6 @@ function MoreDemanded({phonesImg}){
 //  const sliderImg = phonesImg.length;
   const settings = {
     dots: true,
-
     speed: 500,
     slidesToShow: 7,
     slidesToScroll: 7,
@@ -59,7 +60,12 @@ function MoreDemanded({phonesImg}){
         <div className="bg-white my-10">
         <div className="text-2xl font-semibold pl-5 pt-2 pb-5">₹499 Only</div>
         <Slider {...settings}>
+          
           {filteredItems.map((item) => (
+              <Link key={item.id}  to={`/productListing/${item.id}`}
+                state={{ productData: item }}
+                className=" p-4 rounded hover:shadow-lg transition">
+
             <div key={item.id} className="flex flex-col items-center px-10 py-2">
               <img
                 src={item.image}
@@ -71,22 +77,29 @@ function MoreDemanded({phonesImg}){
                 ₹{item.price}
               </p>
             </div>
+       </Link>
           ))}
-        </Slider>
+        </Slider> 
       </div>
       <div className=" bg-white my-10">
       <div className="text-2xl font-semibold pl-5 pt-2 pb-10">
         Best deals on Smartphones
       </div>
       <Slider {...settings}>
+
         {phonesImg[3].electronicsData[8].smartphones.map((item) => (
-          <div key={item.id} className="flex justify-center px-10 w-full">
+           <Link   key={item.id}
+                          to={`/productListing/${item.id}`}
+                          state={{ productData: item }}
+                          className=" rounded hover:shadow-lg transition">
+
+          <div key={item.id} className="px-8 w-full">
             <img src={item.image} className="h-[10rem] mb-5" />
             <p className="text-sm text-center">{item.name}</p>
             <p className="font-semibold text-center">{item.price}</p>
           </div>
 
-            
+            </Link>
         ))}
       </Slider>
     </div>

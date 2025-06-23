@@ -120,14 +120,6 @@ function Festivesection({ grid_deal }) {
                     <div className="grid grid-cols-2 gap-4 p-4 bg-[white]" >
                         {
                         grid_deal.slice(1).map((item) => (
-<<<<<<< HEAD
-                                <Link
-                                    key={item.id}
-                                    to={`/productListing/${item.id}`}
-                                    state={{ productData: item }}
-                                    className="border p-4 rounded hover:shadow-lg transition"
-                                >
-=======
 
 
                             <Link
@@ -135,21 +127,16 @@ function Festivesection({ grid_deal }) {
                                 to={`/productListing/${item.id}`}
                                 state={{ productData: item }}
                                 className="border p-4 rounded hover:shadow-lg transition">
->>>>>>> 5addae6b93c3288cecace46f2382702d36d3746e
                                 <div key={item.id} className="flex flex-col  border-2 border-gray-200 p-5 rounded-md">
                                     <img src={item.image} alt={item.name} className="w-full h-32 object-cover mb-2 transition-transform duraction-300 hover:scale-105 " />
                                     <h3 className="text-lg font-semibold">{item.title}</h3>
                                     <p className="text-gray-500">{item.deal}</p>
                                 </div>
-<<<<<<< HEAD
-                             </Link>
-=======
                             </Link>
 
 
 
 
->>>>>>> 5addae6b93c3288cecace46f2382702d36d3746e
                             ))}
 
 

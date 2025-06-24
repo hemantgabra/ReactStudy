@@ -82,7 +82,7 @@ debugger
             </div>
           );
         })}
-        <div className="my-12">
+        {/*         <div className="my-12">
           <div>    
                   <input 
                     type="file"
@@ -106,6 +106,7 @@ debugger
         <button
         onClick={addCate}
          className="bg-green-500 hover:bg-green-600 rounded-md text-white px-3  my-20">Add</button>
+ */}
       </div>
       
     </div>

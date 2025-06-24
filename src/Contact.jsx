@@ -49,8 +49,6 @@ function Contact() {
   };
 
   
-<<<<<<< HEAD
-=======
   const handleEdit = (post) => {
     setEditingPostId(post.id);
     setNewTitle(post.title);
@@ -61,7 +59,6 @@ function Contact() {
     await axios.delete(`${API_URL}/${id}`);
     setPosts(posts.filter((p) => p.id !== id));
   };
->>>>>>> 5addae6b93c3288cecace46f2382702d36d3746e
 
   useEffect(() => {
     fetchPosts();

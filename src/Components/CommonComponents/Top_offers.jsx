@@ -33,6 +33,7 @@ function topOffers({topOffer}){
               ))}
             </Slider>
           </div>
+          
         );
     
 }

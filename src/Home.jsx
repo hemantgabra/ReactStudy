@@ -4,6 +4,7 @@ import Category from "./Components/Category";
 import Carousel from "./Components/CommonComponents/Carousel";
 import allCarouselData from "./Data/AllCarousel.json";
 import allCategoryData from "./Data/AllCategory.json";
+import lowPriceData from "./Data/LowPrice.json";
 import MoreDemanded from "./Components/CommonComponents/MoreDemanded";
 import Top_offers from "./Components/CommonComponents/Top_offers";
 // import Smartphones from "./Components/CommonComponents/Smartphones";
@@ -28,12 +29,16 @@ function Home() {
   //   setLoadingState(false);
   // }, []);
 
+  // let fname = false;
+  // let age = 20;
+
 
   useEffect(() => {
     const catOne = allCategoryData.allCategory[2].fashionData[0].FestiveData;
     const catTwo = allCategoryData.allCategory[2].fashionData[1].SummerData;
     setCatonedata(catOne);
     setCatTwodata(catTwo);
+    // {fname ? alert("welcome moni you are 20 year old") : alert("moni you are not eligibal")}
   }, 
   []);
 
@@ -43,12 +48,12 @@ function Home() {
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
         <Top_offers topOffer={allCategoryData.allCategory[2].fashionData} />
-        <MoreDemanded phonesImg={allCategoryData.allCategory} />
-        {/* <MoreDemanded
+        <MoreDemanded currentOffer={lowPriceData.offerCategory} />
+        <MoreDemanded
           phonesImg={
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
-        /> */}
+        />
         <div className="flex gap-6">
 
           <Gridbox grid_deal={catonedata} />

@@ -91,7 +91,7 @@ function Contact() {
       <ul className="space-y-4">
         {posts.map((post) => (
           <li
-            key={post.id} 
+            key={post.id}                     
             className="p-4 bg-gray-100 rounded-md shadow flex flex-col sm:flex-row  sm:items-center justify-between gap-3"
           >
             <div className="flex-1">

@@ -3,8 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 function MoreDemanded({ phonesImg, currentOffer }) {
+
+const offerCategory = useSelector((state) => state.offer.offerCategory);
+console.log("ShoesData**********", offerCategory);
+
     // console.log("sliderImg", phonesImg.length);
 
   //  const sliderImg = phonesImg.length;
@@ -18,6 +23,7 @@ function MoreDemanded({ phonesImg, currentOffer }) {
 
   return (
     <div>
+      <div>test</div>
       <div className="bg-white my-10">
         {!phonesImg? <div className="text-2xl font-semibold pl-5 pt-2 pb-5">₹499 Only</div> : ''}
         {!phonesImg?  

@@ -48,6 +48,11 @@ function Home() {
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
         <Top_offers topOffer={allCategoryData.allCategory[2].fashionData} />
+
+
+        <MoreDemanded />
+
+        
         <MoreDemanded currentOffer={lowPriceData.offerCategory} />
         <MoreDemanded
           phonesImg={

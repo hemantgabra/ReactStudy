@@ -18,33 +18,20 @@ import { FiDownload } from "react-icons/fi";
 function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [name, setName] = useState(true);
+  
   const loginDropdownRef = useRef(null);
   const menuDropdownRef = useRef(null);
 
   const names = ["a","b","c"]
 
   // Question About This Const
-    useEffect(() => {
-    setTimeout(() => {
-      setName('hemant');
-    }, 1000);
+ 
     
-    function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    }
-    // document.addEventListener("mousedown", handleClickOutside);
-    // return () => {
-    //   document.removeEventListener("mousedown", handleClickOutside);
-    // };
-  }, []);
   return (
     <Router>
       <div className="shadow-md">
         
-{name ? name : <h1>Moni</h1>}
+
         
         <div className="flex justify-around items-center px-3 py-2 bg-blue-600">
           <div className="py-1">

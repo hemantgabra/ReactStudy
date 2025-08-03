@@ -9,9 +9,7 @@ const initialState = {
 const offerSlice = createSlice({
     name : 'offer',
     initialState,
-    reducers:{
-
-    }
+    reducers:{}
 });
 
 export default offerSlice.reducer;

@@ -32,6 +32,10 @@ function Home() {
   // let fname = false;
   // let age = 20;
 
+const [className, setClassName] = useState("12");
+const name = "Hemant Gabra"
+
+
 
   useEffect(() => {
     const catOne = allCategoryData.allCategory[2].fashionData[0].FestiveData;
@@ -45,12 +49,13 @@ function Home() {
   return (
     <div>
       <div className="bg-[#f1f2f4] px-20">
+        {/* <h1>Hemant Gabra</h1> */}
+
+        
         <Category />
         <Carousel carouselImg={allCarouselData.allCarousel} />
         <Top_offers topOffer={allCategoryData.allCategory[2].fashionData} />
 
-
-        <MoreDemanded />
 
         
         <MoreDemanded currentOffer={lowPriceData.offerCategory} />

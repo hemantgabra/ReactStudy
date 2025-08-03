@@ -10,9 +10,7 @@ function MoreDemanded({ phonesImg, currentOffer }) {
 const offerCategory = useSelector((state) => state.offer.offerCategory);
 console.log("ShoesData**********", offerCategory);
 
-    // console.log("sliderImg", phonesImg.length);
 
-  //  const sliderImg = phonesImg.length;
   const settings = {
     dots: true,
     speed: 500,
@@ -23,13 +21,11 @@ console.log("ShoesData**********", offerCategory);
 
   return (
     <div>
-      <div>test</div>
       <div className="bg-white my-10">
         {!phonesImg? <div className="text-2xl font-semibold pl-5 pt-2 pb-5">₹499 Only</div> : ''}
         {!phonesImg?  
         <Slider {...settings}>
           {currentOffer?.map((item) => (
-            console.log("item", item),
             <Link
               key={item.id}
               to={`/productListing/${item.id}`}

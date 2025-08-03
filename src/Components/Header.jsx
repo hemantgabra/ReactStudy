@@ -15,9 +15,13 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaHeadphonesAlt } from "react-icons/fa";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import { FiDownload } from "react-icons/fi";
+import Profile from "../Profile";
+
 function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isUser, setIsNotUser] = useState(true);
+  const [loadPage, setLoadPage] = useState(false);
   
   const loginDropdownRef = useRef(null);
   const menuDropdownRef = useRef(null);
@@ -25,9 +29,25 @@ function Header() {
   const names = ["a","b","c"]
 
   // Question About This Const
- 
+ const checkUser = () => {
+  if(isUser){
+    setLoadPage(true);    
+  }
+  else{
+alert('hi');
+  }
+  
+ }
     
   return (
+    <>
+    
+      <Router>
+      <Link to="/aboutus">About Us</Link>
+      <Link to="/contact">Contact Us</Link>
+      <Link to="/error">Error</Link>
+      </Router>
+  
     <Router>
       <div className="shadow-md">
         
@@ -66,12 +86,12 @@ function Header() {
                     <a href="#">New Customer ?</a>
                     <a href="#">Sign In</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer felx items-center justify-center flex-row">
-                    <Link to="/" className="flex items-center gap-[0.5rem]">
-                      {" "}
-                      <FaRegUserCircle></FaRegUserCircle> Profile
-                    </Link>
+                  <li onClick={checkUser} className="px-4 py-2 hover:bg-gray-100 cursor-pointer felx items-center justify-center flex-row">
+                    
+                     Profile
+                    
                   </li>
+                  {loadPage && <Profile />}
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer felx items-center justify-center flex-row">
                     <Link to="/" className="flex items-center gap-[0.5rem]">
                       <GiNinjaStar />
@@ -163,6 +183,7 @@ function Header() {
         </div>
       </div>
     </Router>
+    </>
   );
 }
 

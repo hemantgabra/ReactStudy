@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <Router>
-      <div className="shadow-md">
+      <div className="shadow-md ">
         <div className="flex justify-around items-center px-3 py-2 bg-blue-600">
           <div className="py-1">
             <img src="images/Logoimage/Logo.svg" width="200" alt="Logo" />

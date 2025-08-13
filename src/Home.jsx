@@ -54,7 +54,7 @@ function Home() {
             allCategoryData.allCategory[3].electronicsData[8].smartphones
           }
         />
-        <div className="flex gap-6">
+        <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-4 p-4 bg-[white]">
 
           <Gridbox grid_deal={catonedata} />
           <Gridbox grid_deal={catTwodata} />

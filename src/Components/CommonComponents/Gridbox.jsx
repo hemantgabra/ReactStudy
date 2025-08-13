@@ -90,19 +90,11 @@ function Festivesection({ grid_deal }) {
     }
 };
 
-
-    
-
-
-
-
-
-
     return (
         <div>
 
-            <div className="slider-container my-10 flex flex-col">
-                <div className="w-[33rem]">
+            <div className="slider-container flex flex-col ">
+                <div className="w-auto">
                     <div className="text-2xl font-semibold px-[2rem] py-[2rem]  bg-[white] flex items-center justify-between">
                         {
                             grid_deal.map((item) => (
@@ -117,7 +109,7 @@ function Festivesection({ grid_deal }) {
                         <FaArrowCircleRight className="text-blue-500" />
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4 p-4 bg-[white]" >
+                    <div className="flex grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-2 gap-4 p-4 bg-[white]" >
                         {
                         grid_deal.slice(1).map((item) => (
 

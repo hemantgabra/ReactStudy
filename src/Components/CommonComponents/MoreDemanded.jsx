@@ -16,6 +16,34 @@ console.log("ShoesData**********", offerCategory);
     speed: 500,
     slidesToShow: 7,
     slidesToScroll: 7,
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
   };
 
 
@@ -23,9 +51,16 @@ console.log("ShoesData**********", offerCategory);
     <div>
       <div className="bg-white my-10">
         {!phonesImg? <div className="text-2xl font-semibold pl-5 pt-2 pb-5">₹499 Only</div> : ''}
+
+        {!phonesImg? 
+       <Slider {...settings }>
+          {currentOffer.map((item) => (
+            console.log("item", item),
+
         {!phonesImg?  
         <Slider {...settings}>
           {currentOffer?.map((item) => (
+
             <Link
               key={item.id}
               to={`/productListing/${item.id}`}
@@ -47,7 +82,7 @@ console.log("ShoesData**********", offerCategory);
               </div>
             </Link>
           ))}
-        </Slider>
+          </Slider>
         : ''}
         
       </div>

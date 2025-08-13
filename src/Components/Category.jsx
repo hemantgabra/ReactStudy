@@ -44,7 +44,7 @@ debugger
     
    
     
-      <div className="flex bg-white justify-evenly text-center px-20">
+      <div className="flex bg-white justify-evenly text-center grid grid-cols-2  md:grid-cols-4 lg:grid-cols-9 gap-4">
         {categories.map((category) => {
           const subcategories =
             category.fashionData ||
@@ -55,7 +55,7 @@ debugger
             [];
           return (
             <div
-              className="my-7 relative"
+              className="my-7 relative "
               key={category.id}
               onMouseEnter={() => setHoveredCategory(category.id)}
               onMouseLeave={() => setHoveredCategory(null)}

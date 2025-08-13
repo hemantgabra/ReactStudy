@@ -3,11 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 function MoreDemanded({ phonesImg, currentOffer }) {
-    // console.log("sliderImg", phonesImg.length);
 
-  //  const sliderImg = phonesImg.length;
+const offerCategory = useSelector((state) => state.offer.offerCategory);
+console.log("ShoesData**********", offerCategory);
+
+
   const settings = {
     dots: true,
     speed: 500,
@@ -48,10 +51,16 @@ function MoreDemanded({ phonesImg, currentOffer }) {
     <div>
       <div className="bg-white my-10">
         {!phonesImg? <div className="text-2xl font-semibold pl-5 pt-2 pb-5">₹499 Only</div> : ''}
+
         {!phonesImg? 
        <Slider {...settings }>
           {currentOffer.map((item) => (
             console.log("item", item),
+
+        {!phonesImg?  
+        <Slider {...settings}>
+          {currentOffer?.map((item) => (
+
             <Link
               key={item.id}
               to={`/productListing/${item.id}`}

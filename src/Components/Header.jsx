@@ -15,28 +15,48 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaHeadphonesAlt } from "react-icons/fa";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import { FiDownload } from "react-icons/fi";
+import Profile from "../Profile";
+
 function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isUser, setIsNotUser] = useState(true);
+  const [loadPage, setLoadPage] = useState(false);
+  
   const loginDropdownRef = useRef(null);
   const menuDropdownRef = useRef(null);
 
-  // Question About This Const
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    }
-    // document.addEventListener("mousedown", handleClickOutside);
-    // return () => {
-    //   document.removeEventListener("mousedown", handleClickOutside);
-    // };
-  }, []);
+  const names = ["a","b","c"]
 
+  // Question About This Const
+ const checkUser = () => {
+  if(isUser){
+    setLoadPage(true);    
+  }
+  else{
+alert('hi');
+  }
+  
+ }
+    
   return (
+    <>
+    
+      <Router>
+      <Link to="/aboutus">About Us</Link>
+      <Link to="/contact">Contact Us</Link>
+      <Link to="/error">Error</Link>
+      </Router>
+  
     <Router>
+
       <div className="shadow-md ">
+
+      <div className="shadow-md">
+        
+
+        
+
         <div className="flex justify-around items-center px-3 py-2 bg-blue-600">
           <div className="py-1">
             <img src="images/Logoimage/Logo.svg" width="200" alt="Logo" />
@@ -70,12 +90,12 @@ function Header() {
                     <a href="#">New Customer ?</a>
                     <a href="#">Sign In</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer felx items-center justify-center flex-row">
-                    <Link to="/" className="flex items-center gap-[0.5rem]">
-                      {" "}
-                      <FaRegUserCircle></FaRegUserCircle> Profile
-                    </Link>
+                  <li onClick={checkUser} className="px-4 py-2 hover:bg-gray-100 cursor-pointer felx items-center justify-center flex-row">
+                    
+                     Profile
+                    
                   </li>
+                  {loadPage && <Profile />}
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer felx items-center justify-center flex-row">
                     <Link to="/" className="flex items-center gap-[0.5rem]">
                       <GiNinjaStar />
@@ -167,6 +187,7 @@ function Header() {
         </div>
       </div>
     </Router>
+    </>
   );
 }
 

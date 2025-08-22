@@ -16,7 +16,7 @@ console.log("ShoesData**********", offerCategory);
     speed: 500,
     slidesToShow: 7,
     slidesToScroll: 7,
-      responsive: [
+    responsive: [
     {
       breakpoint: 1024,
       settings: {
@@ -49,7 +49,7 @@ console.log("ShoesData**********", offerCategory);
 
   return (
     <div>
-      <div className="bg-white my-10">
+      <div className="bg-white ">
         {!phonesImg? <div className="text-2xl font-semibold pl-5 pt-2 pb-5">₹499 Only</div> : ''}
 
         {!phonesImg? 
@@ -57,9 +57,6 @@ console.log("ShoesData**********", offerCategory);
           {currentOffer.map((item) => (
             console.log("item", item),
 
-        {!phonesImg?  
-        <Slider {...settings}>
-          {currentOffer?.map((item) => (
 
             <Link
               key={item.id}
@@ -68,12 +65,12 @@ console.log("ShoesData**********", offerCategory);
               className=" p-4 rounded hover:shadow-lg transition"
             >
               <div
-                className="flex flex-col items-center px-10 py-2"
+                className="flex flex-col items-center px-10 py-2 mb-5"
               >
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-28 h-28 object-cover rounded-md mb-2"
+                  className="w-full h-[10rem] rounded-md"
                 />
                 <p className="text-sm font-medium">{item.name}</p>
                 <p className="text-green-600 font-semibold text-sm">
@@ -98,8 +95,8 @@ console.log("ShoesData**********", offerCategory);
               state={{ productData: data }}
               className=" rounded hover:shadow-lg transition"
             >
-              <div key={data.id} className="px-8 w-full">
-                <img src={data.image} className="h-[10rem] mb-5" />
+              <div key={data.id} className="px-8 w-full pb-5">
+                <img src={data.image} className=" w-fullh-[10rem] mb-5" />
                 <p className="text-sm text-center">{data.name}</p>
                 <p className="font-semibold text-center">{data.price}</p>
               </div>

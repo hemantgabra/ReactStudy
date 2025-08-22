@@ -40,7 +40,7 @@ debugger
 
   
   return (
-    <div className="w-full bg-[#f1f2f4]  pt-4 px-8"> 
+    <div className="w-full bg-[#f1f2f4]  pt-4 "> 
     
    
     
@@ -55,7 +55,7 @@ debugger
             [];
           return (
             <div
-              className="my-7 relative "
+              className="px-5 relative "
               key={category.id}
               onMouseEnter={() => setHoveredCategory(category.id)}
               onMouseLeave={() => setHoveredCategory(null)}

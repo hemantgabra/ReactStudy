@@ -14,9 +14,8 @@ import AllServices from "./AllServices";
 function App() {
   return (
     <div>
-      <div><Header /></div>
       <BrowserRouter>
-        
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />

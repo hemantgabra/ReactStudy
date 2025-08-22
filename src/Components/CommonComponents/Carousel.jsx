@@ -16,7 +16,7 @@ function AutoPlay(carouselImg) {
 
   
   return (
-    <div className="slider-container w-full5263 py-6  mb-4 bg-[#f1f2f4]">
+    <div className="slider-container w-full5263 py-6 bg-[#f1f2f4]">
       <div className=" bg-[white] pb-7">
         <Slider {...settings}>
           {carouselImg.carouselImg.map((item) => (

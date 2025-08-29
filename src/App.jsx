@@ -10,6 +10,7 @@ import ProductListing from "./ProductListing";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import AllServices from "./AllServices";
+import Crud from "./CRUD";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/crud" element={<Crud />} />
           <Route path="/allservices" element={<AllServices />} />
           <Route path="*" element={<Error />} />
           <Route path="/productListing/:id" element={<ProductListing />} />

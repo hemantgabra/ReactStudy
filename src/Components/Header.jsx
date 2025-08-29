@@ -1,7 +1,12 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
-import { FaChevronDown, FaRegUserCircle, FaBoxOpen, FaGift } from "react-icons/fa";
+import {
+  FaChevronDown,
+  FaRegUserCircle,
+  FaBoxOpen,
+  FaGift,
+} from "react-icons/fa";
 import { GiNinjaStar } from "react-icons/gi";
 import { CiHeart, CiMenuKebab } from "react-icons/ci";
 import { TbGiftCardFilled } from "react-icons/tb";
@@ -131,7 +136,12 @@ function Header() {
         <div className="text-white font-medium text-[1rem]">
           <Link to="/contact">Contact Us</Link>
         </div>
-
+        <div className="text-white font-medium text-[1rem]">
+          <Link to="/allservices">All Services</Link>
+        </div>
+        <div  className="text-white font-medium text-[1rem]">
+          <Link to="/crud">Crud</Link>
+        </div>
         {/* Menu Dropdown */}
         <div className="relative z-10" ref={menuDropdownRef}>
           <button
